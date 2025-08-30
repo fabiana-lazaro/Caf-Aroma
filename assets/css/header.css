@@ -1,0 +1,174 @@
+header {
+  font-family: sans-serif;
+  z-index: 1000;
+}
+
+/* Barra superior de color marron con la barrra de busqueda */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #633007; 
+  padding: 8px 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Barra de busqueda */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-container input {
+  border: none;
+  padding: 6px 10px;
+  outline: none;
+  background: none;
+  width: 100%;
+}
+
+.search-container button {
+  background: #d4a373;
+  border: none;
+  padding: 6px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #e8e0d3;
+}
+
+/* Carrito */
+.cart-container {
+  display: none;
+  position: relative;
+}
+
+.cart-container button {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cart-container .cart-count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: #e6b566;
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Botones como el inicio, menu, libro de reclamaciones y contactanos */
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#d4a373; 
+  padding: 0;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#d4a373; 
+  padding: 0;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#d4a373; 
+  padding: 0;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.button {
+  background: none;
+  border: none;
+  padding: 9px 15px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+
+}
+
+.button:hover {
+  /* Cuando el elemento se encuentre en el estado indicado toma estos estilos, duran lo que dura el estado */
+  background-color: #f7f3f0;
+  cursor: pointer;
+  border-color: black;
+  justify-content: center;
+  border-radius: 8px;
+}
+ @media (min-width: 600px) {
+    .cart-container {
+        display: flex; /* Muestra el carrito cuando la pantalla es más grande */
+        align-items: center; /* Asegura que el icono esté centrado si es necesario */
+    }
+}
+
+
+/* Tablets (no olvidar) */
+@media (max-width: 992px) {
+  .menu {
+    gap: 0.5rem;
+  }
+  .menu button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Celulares no olvidar  */
+@media (max-width: 576px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-container {
+    min-width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+/* Este es para pantallas grandes */
+@media (min-width: 1000px) {
+  .nav-menu button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    
+  }
+
+  
+
+}
+
