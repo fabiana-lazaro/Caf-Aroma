@@ -1,67 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --color-primario: #4B2E1E;
-    --color-secundario: #DCC5A1;
-    --fondo-claro: #F6F1E7;
-    --resaltado-calido: #B57A4B;
-    --texto-base: #2B1B12;
+  --color-primario: #4b2e1e;
+  --color-secundario: #dcc5a1;
+  --fondo-claro: #f6f1e7;
+  --resaltado-calido: #b57a4b;
+  --texto-base: #2b1b12;
 }
 
-
 .in {
-    display: flow-root;
-     margin-left: 5px;
-     padding: 5px;
+  display: flow-root;
+  margin-left: 5px;
+  padding: 5px;
 }
 
 .image {
-    float: right;
+  float: right;
 
-    width: 90px;
+  width: 90px;
 }
 
-
 main {
-    background-color: var(--color-secundario)
+  background-color: var(--color-secundario);
 }
 
 h1 {
   font-family: "Playfair Display", system-ui;
   font-size: 26px;
 
-    color: var(--texto-base)
-       
+  color: var(--texto-base);
 }
 
-
 .le {
-
   font-family: "Playfair Display", system-ui;
   font-size: 26px;
-    color: var(--texto-base)
-
+  color: var(--texto-base);
 }
 
 .re {
-
-background-color: #B57A4B;
-padding: 15px;
-
+  background-color: #b57a4b;
+  padding: 15px;
 }
 
 .viv {
-
- font-family: "Playfair Display", system-ui;
+  font-family: "Playfair Display", system-ui;
   font-size: 16px;
 
-    color: var(--texto-base)  
-
+  color: var(--texto-base);
 }
 
 p {
@@ -73,28 +61,27 @@ h5 {
   font-size: 15px;
 }
 
-
 #carouselExampleCaptions {
   margin: 20px;
 }
 
 #carouselExample .carousel-inner {
   max-height: 800px; /* Limita la altura máxima del contenedor del carrusel */
-  overflow: hidden;  /* Oculta cualquier contenido que sobresalga */
+  overflow: hidden; /* Oculta cualquier contenido que sobresalga */
 }
 
 #carouselExample .carousel-inner img {
-  max-height: 100px;   /* Limita la altura máxima de cada imagen */
-  width: auto;         /* Ajusta el ancho proporcionalmente */
-  margin: 0 auto;      /* Centra la imagen */
+  max-height: 100px; /* Limita la altura máxima de cada imagen */
+  width: auto; /* Ajusta el ancho proporcionalmente */
+  margin: 0 auto; /* Centra la imagen */
   object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
-  display: block;      /* Para que el margen funcione correctamente */
+  display: block; /* Para que el margen funcione correctamente */
 }
 
 #carouselExample {
-  max-width: 900px; 
-  margin: 30px auto; 
-  border: 8px solid #f6f1e7; 
+  max-width: 900px;
+  margin: 30px auto;
+  border: 8px solid #f6f1e7;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -107,22 +94,21 @@ h5 {
   background-color: black !important;
   mask-image: none !important; /* Quita la máscara predeterminada para que el fondo negro sea visible */
   -webkit-mask-image: none !important;
-  width: 40px; 
+  width: 40px;
   height: 40px;
   opacity: 0.8; /* transparencia */
   border-radius: 50%; /* para que sean circulares */
 }
 
 #carouselExample .carousel-control-prev {
-  left: 40px; 
-  width: 40px; 
+  left: 40px;
+  width: 40px;
 }
 
 #carouselExample .carousel-control-next {
   right: 40px;
   width: 40px;
 }
-
 
 #carouselExampleCaptions {
   max-width: 900px;
@@ -132,7 +118,7 @@ h5 {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
   position: relative;
-  z-index: 1;  /* RECUERDA ESTO */
+  z-index: 1; /* RECUERDA ESTO */
 }
 
 #carouselExampleCaptions .carousel-item img {
@@ -150,12 +136,7 @@ h5 {
   padding: 10px;
 }
 
-
-
 /* 2do carrusel */
-
-
-
 
 #carrusel2 {
   max-width: 900px;
@@ -165,7 +146,7 @@ h5 {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
   position: relative;
-  z-index: 1;  /* RECUERDA ESTO */
+  z-index: 1; /* RECUERDA ESTO */
 }
 
 #carrusel2 .carousel-item img {
@@ -185,7 +166,7 @@ h5 {
 
 .carousel-caption {
   /* Añade un fondo semitransparente para que el texto sea más legible */
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.4);
   /* Aplica el efecto de "cristal" o "frosted glass" */
   backdrop-filter: blur(5px);
   /* Asegura que el fondo abarque todo el ancho del caption */
@@ -197,7 +178,6 @@ h5 {
   box-sizing: border-box; /* Para que el padding no añada ancho extra */
 }
 
-
 /* 3er carrusel */
 
 #carrusel3 {
@@ -208,7 +188,7 @@ h5 {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
   position: relative;
-  z-index: 1;  /* RECUERDA ESTO */
+  z-index: 1; /* RECUERDA ESTO */
 }
 
 #carrusel3 .carousel-item img {
@@ -231,13 +211,13 @@ h5 {
 #carrusel4 {
   max-width: 900px;
   margin: 0 15px;
- 
+
   border: 8px solid #f6f1e7;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
   position: relative;
-  z-index: 1;  /* RECUERDA ESTO */
+  z-index: 1; /* RECUERDA ESTO */
 }
 
 #carrusel4 .carousel-item img {
@@ -257,7 +237,7 @@ h5 {
 
 .carousel-caption {
   /* Añade un fondo semitransparente para que el texto sea más legible */
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.4);
   /* Aplica el efecto de "cristal" o "frosted glass" */
   backdrop-filter: blur(5px);
   /* Asegura que el fondo abarque todo el ancho del caption */
@@ -269,287 +249,248 @@ h5 {
   box-sizing: border-box; /* Para que el padding no añada ancho extra */
 }
 
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-family: "Playfair Display", system-ui;
+    font-size: 55px;
 
+    color: var(--texto-base);
+  }
 
-@media only screen and (min-width: 768px) { 
+  .le {
+    font-family: "Playfair Display", system-ui;
+    font-size: 35px;
+    color: var(--texto-base);
+  }
 
-h1 {
-  font-family: "Playfair Display", system-ui;
-  font-size: 55px;
+  .viv {
+    font-family: "Playfair Display", system-ui;
+    font-size: 20px;
+    color: var(--texto-base);
+  }
 
-    color: var(--texto-base)
-       
-}
-
-
-.le {
-
-  font-family: "Playfair Display", system-ui;
-  font-size: 35px;
-    color: var(--texto-base)
-
-}
-
-.viv {
-
- font-family: "Playfair Display", system-ui;
-  font-size: 20px;
-    color: var(--texto-base)  
-
-}
-
-h5 {
-  font-size: 15px;
-}
-
-
+  h5 {
+    font-size: 15px;
+  }
 
   #carouselExampleCaptions {
     margin: 30px;
   }
 
-    #carouselExample .carousel-inner {
-  max-height: 768px; /* Limita la altura máxima del contenedor del carrusel */
-  overflow: hidden;  /* Oculta cualquier contenido que sobresalga */
-  
-}
+  #carouselExample .carousel-inner {
+    max-height: 768px; /* Limita la altura máxima del contenedor del carrusel */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+  }
 
+  #carouselExample .carousel-inner img {
+    max-height: 760px; /* Limita la altura máxima de cada imagen */
+    width: auto; /* Ajusta el ancho proporcionalmente */
+    margin: 0 auto; /* Centra la imagen */
+    object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
+    display: block; /* Para que el margen funcione correctamente */
+  }
 
-#carouselExample .carousel-inner img {
-  max-height: 760px;   /* Limita la altura máxima de cada imagen */
-  width: auto;         /* Ajusta el ancho proporcionalmente */
-  margin: 0 auto;      /* Centra la imagen */
-  object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
-  display: block;      /* Para que el margen funcione correctamente */
-}
+  #carousel2 .carousel-inner img {
+    max-height: 730px; /* Limita la altura máxima de cada imagen */
+    width: auto; /* Ajusta el ancho proporcionalmente */
+    margin: 0 auto; /* Centra la imagen */
+    object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
+    display: block; /* Para que el margen funcione correctamente */
+  }
 
-#carousel2 .carousel-inner img {
-  max-height: 730px;   /* Limita la altura máxima de cada imagen */
-  width: auto;         /* Ajusta el ancho proporcionalmente */
-  margin: 0 auto;      /* Centra la imagen */
-  object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
-  display: block;      /* Para que el margen funcione correctamente */
-}
+  #carrusel2 .carousel-item img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
 
-#carrusel2 .carousel-item img {
-  object-fit: cover;
-  height: 500px;
-  width: 100%;
-  display: block;
-  position: relative;
-}
-
- #carrusel3 .carousel-inner {
-  max-height: 768px; /* Limita la altura máxima del contenedor del carrusel */
-  overflow: hidden;  /* Oculta cualquier contenido que sobresalga */
-
-}
-
+  #carrusel3 .carousel-inner {
+    max-height: 768px; /* Limita la altura máxima del contenedor del carrusel */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+  }
 
   #carrusel3 .carousel-inner img {
-   
-  max-height: 768px;   /* Limita la altura máxima de cada imagen */
-  width: auto;         /* Ajusta el ancho proporcionalmente */
-  margin: 0 auto;      /* Centra la imagen */
-  object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
-  display: block;      /* Para que el margen funcione correctamente */
-}
+    max-height: 768px; /* Limita la altura máxima de cada imagen */
+    width: auto; /* Ajusta el ancho proporcionalmente */
+    margin: 0 auto; /* Centra la imagen */
+    object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
+    display: block; /* Para que el margen funcione correctamente */
+  }
 
-#carrusel3 .carousel-item img {
-  object-fit: cover;
-  height: 500px;
-  width: 100%;
-  display: block;
-  position: relative;
-}
+  #carrusel3 .carousel-item img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
 
- #carrusel4 .carousel-inner {
- 
-  max-height: 768px; /* Limita la altura máxima del contenedor del carrusel */
-  overflow: hidden;  /* Oculta cualquier contenido que sobresalga */
+  #carrusel4 .carousel-inner {
+    max-height: 768px; /* Limita la altura máxima del contenedor del carrusel */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+  }
 
-}
+  #carrusel4 .carousel-item img {
+    object-fit: cover;
+    height: 400px; /* La altura contenedor */
 
-#carrusel4 .carousel-item img {
-  object-fit: cover;
-  height: 400px;    /* La altura contenedor */
+    width: 100%;
+    display: block;
+    position: relative;
+  }
 
-  width: 100%;
-  display: block;
-  position: relative;
-}
+  #carrusel4 .carousel-inner img {
+    max-height: 600px; /* Limita la altura máxima de cada imagen */
+    width: auto; /* Ajusta el ancho proporcionalmente */
+    margin: 0 auto; /* Centra la imagen */
+    object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
+    display: block; /* Para que el margen funcione correctamente */
+  }
 
- #carrusel4 .carousel-inner img {
-  max-height: 600px;   /* Limita la altura máxima de cada imagen */
-  width: auto;         /* Ajusta el ancho proporcionalmente */
-  margin: 0 auto;      /* Centra la imagen */
-  object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
-  display: block;      /* Para que el margen funcione correctamente */
-}
-
-#carrusel4 .carousel-inner {
+  #carrusel4 .carousel-inner {
     max-height: 600px; /* Ajusta este valor si necesitas más o menos altura */
     overflow: hidden;
-}
+  }
 
-#carrusel4 .carousel-item img {
-   
-    width: 100%;  /* La imagen ocupa el 100% del ancho */  /* Que lindo es que el ancho tenga prioridad */
+  #carrusel4 .carousel-item img {
+    width: 100%; /* La imagen ocupa el 100% del ancho */ /* Que lindo es que el ancho tenga prioridad */
     object-fit: cover; /* Recorta la imagen para que siempre cubra el espacio */
+  }
+
+  #carrusel4 {
+    max-width: 900px;
+    margin: 15px auto;
+
+    border: 8px solid #f6f1e7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+    position: relative;
+    z-index: 1; /* RECUERDA ESTO */
+  }
+
+  #carouselExampleCaptions .carousel-item img {
+    object-fit: cover;
+    height: 650px;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
 }
 
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-family: "Playfair Display", system-ui;
+    font-size: 55px;
 
-#carrusel4 {
-  max-width: 900px;
-  margin: 15px auto;
- 
-  border: 8px solid #f6f1e7;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
-  position: relative;
-  z-index: 1;  /* RECUERDA ESTO */
-}
+    color: var(--texto-base);
+  }
 
+  .le {
+    font-family: "Playfair Display", system-ui;
+    font-size: 40px;
+    color: var(--texto-base);
+  }
 
+  .viv {
+    font-family: "Playfair Display", system-ui;
+    font-size: 25px;
+    color: var(--texto-base);
+  }
 
-#carouselExampleCaptions .carousel-item img {
+  h5 {
+    font-size: 15px;
+  }
 
-  object-fit: cover;
-  height: 650px;
-  width: 100%;
-  display: block;
-  position: relative;
-}
-
-
-}
-
-@media only screen and (min-width: 1000px) { 
-
-
-
-h1 {
-  font-family: "Playfair Display", system-ui;
-  font-size: 55px;
-
-    color: var(--texto-base)
-       
-}
-
-
-.le {
-
-  font-family: "Playfair Display", system-ui;
-  font-size: 40px;
-    color: var(--texto-base)
-
-}
-
-.viv {
-
- font-family: "Playfair Display", system-ui;
-  font-size: 25px;
-    color: var(--texto-base)  
-
-}
-
-h5 {
-  font-size: 15px;
-}
-
+  .Drink {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 
   #carouselExampleCaptions {
     margin: auto;
   }
-   
+
   #carouselExample .carousel-inner {
-  max-height: 1000px; /* Limita la altura máxima del contenedor del carrusel */
-  overflow: hidden;  /* Oculta cualquier contenido que sobresalga */
+    max-height: 1000px; /* Limita la altura máxima del contenedor del carrusel */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+  }
 
+  #carouselExample .carousel-inner img {
+    max-height: 1000x; /* Limita la altura máxima de cada imagen */
+    width: auto; /* Ajusta el ancho proporcionalmente */
+    margin: 0 auto; /* Centra la imagen */
+    object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
+    display: block; /* Para que el margen funcione correctamente */
+  }
 
-  
-}
+  #carouselExampleCaptions .carousel-item img {
+    object-fit: cover;
+    height: 700px;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
 
-#carouselExample .carousel-inner img {
-  max-height: 1000x;   /* Limita la altura máxima de cada imagen */
-  width: auto;         /* Ajusta el ancho proporcionalmente */
-  margin: 0 auto;      /* Centra la imagen */
-  object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
-  display: block;      /* Para que el margen funcione correctamente */
-}
+  #carrusel2 .carousel-item img {
+    object-fit: cover;
+    height: 700px;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
 
-#carouselExampleCaptions .carousel-item img {
-  object-fit: cover;
-  height: 700px;
-  width: 100%;
-  display: block;
-  position: relative;
-}
+  #carrusel2 .carousel-item img {
+    margin: 0 auto;
+    border: 8px solid #f6f1e7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+    position: relative;
+    z-index: 1; /* RECUERDA ESTO */
+  }
 
-#carrusel2 .carousel-item img {
-  object-fit: cover;
-  height: 700px;
-  width: 100%;
-  display: block;
-  position: relative;
-}
+  #carrusel3 .carousel-item img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
 
+  #carrusel3 {
+    max-width: 800px;
+    margin: 20px auto; /* RECUERDA ESTO: CENTRA EL CARRUSEL REBELDE */
+    border: 8px solid #f6f1e7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+    position: relative;
+    z-index: 1; /* RECUERDA ESTO */
+  }
 
-#carrusel2 .carousel-item img {
-  
- 
-  margin: 0 auto;
-  border: 8px solid #f6f1e7;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
-  position: relative;
-  z-index: 1;  /* RECUERDA ESTO */
-}
+  #carrusel2 {
+    max-width: 800px;
+    margin: 20px auto; /* RECUERDA ESTO: CENTRA EL CARRUSEL REBELDE */
+    border: 0px solid #f6f1e7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+    position: relative;
+    z-index: 1; /* RECUERDA ESTO */
+  }
 
-#carrusel3 .carousel-item img {
-  object-fit: cover;
-  height: 500px;
-  width: 100%;
-  display: block;
-  position: relative;
-}
-
-
-#carrusel3 {
-  max-width: 800px;
-  margin: 20px auto; /* RECUERDA ESTO: CENTRA EL CARRUSEL REBELDE */
-  border: 8px solid #f6f1e7;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
-  position: relative;
-  z-index: 1;  /* RECUERDA ESTO */
-}
-
-#carrusel2 {
-  max-width: 800px;
-  margin: 20px auto; /* RECUERDA ESTO: CENTRA EL CARRUSEL REBELDE */
-  border: 0px solid #f6f1e7;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
-  position: relative;
-  z-index: 1;  /* RECUERDA ESTO */
-}
-
-
-#carouselExampleCaptions {
-  max-width: 900px;
-  margin: 20px auto;  /* RECUERDA ESTO: CENTRA EL CARRUSEL REBELDE */
-  border: 8px solid #f6f1e7;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
-  position: relative;
-  z-index: 1;  /* RECUERDA ESTO */
-}
-
-
+  #carouselExampleCaptions {
+    max-width: 900px;
+    margin: 20px auto; /* RECUERDA ESTO: CENTRA EL CARRUSEL REBELDE */
+    border: 8px solid #f6f1e7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+    position: relative;
+    z-index: 1; /* RECUERDA ESTO */
+  }
 }
