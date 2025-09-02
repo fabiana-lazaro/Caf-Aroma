@@ -404,10 +404,14 @@ h5 {
     font-size: 15px;
   }
 
-  .Drink {
+  .drink {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 10px;
+  }
+
+  .carousel {
+    text-align: center;
   }
 
   #carouselExampleCaptions {
