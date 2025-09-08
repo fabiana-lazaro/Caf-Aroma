@@ -10,90 +10,105 @@
   --warm-highlight: #b57a4b;
   --base-text: #2b1b12;
 }
-
-/* Celulares */
-
 .about-us-section {
   background-color: var(--secondary-color);
 }
 
-/* Sobre el logo */
-
+/* logo */
 .in {
   display: flow-root;
   margin-left: 5px;
   padding: 5px;
 }
-
 .image {
   float: right;
-
   width: 90px;
 }
 
-/* Fin del logo */
-
+/* texto principal */
 .about-us-info h1 {
   font-family: "Playfair Display", system-ui;
-  font-size: 1.625rem;
+  font-size: 26px;
   color: var(--base-text);
 }
-
 .about-us-info p {
   font-family: "Lato", system-ui;
-  font-size: 1rem;
+  font-size: 15px;
   color: var(--primary-color);
+  line-height: 1.5;
 }
 
+/* cards */
 .team-cards .card {
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .team-cards .card:hover {
   transform: translateY(-5px);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+
+/* imágenes */
+.team-cards .card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* texto dentro de las cards */
 .team-cards h5 {
   font-family: "Merriweather Sans", system-ui;
-  font-size: 1.25rem;
+  font-size: 16px;
   color: var(--base-text);
 }
 .team-cards p {
   font-family: "Roboto", system-ui;
-  font-size: 0.875rem;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
+/* tablets */
 @media only screen and (min-width: 576px) {
   .about-us-info h1 {
-    font-size: 2.5rem;
+    font-size: 36px;
   }
   .about-us-info p {
-    font-size: 1.25rem;
+    font-size: 16px;
   }
 
-  .cards h5 {
-    font-size: 26px;
+  .team-cards .card {
+    max-width: 360px;
   }
 
-  .cards p {
+  .team-cards h5 {
     font-size: 18px;
+  }
+  .team-cards p {
+    font-size: 15px;
   }
 }
 
-/* Computadoras */
+/* desktops */
 @media only screen and (min-width: 992px) {
-  .cafe-aroma-info h1 {
-    font-size: 60px;
+  .about-us-info h1 {
+    font-size: 48px;
+  }
+  .about-us-info p {
+    font-size: 18px;
   }
 
-  .cafe-aroma-info p {
-    font-size: 24px;
+  .team-cards .card {
+    max-width: 420px;
   }
 
-  .cards h5 {
-    font-size: 32px;
-  }
-
-  .cards p {
+  .team-cards h5 {
     font-size: 20px;
+  }
+  .team-cards p {
+    font-size: 16px;
   }
 }

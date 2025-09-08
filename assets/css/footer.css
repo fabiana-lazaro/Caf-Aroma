@@ -1,66 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@1,300..800&display=swap");
 
 :root {
-    --color-primario: #4B2E1E;
-    --color-secundario: #DCC5A1;
-    --fondo-claro: #F6F1E7;
-    --resaltado-calido: #B57A4B;
-    --texto-base: #2B1B12;
+  --primary-color: #4b2e1e;
+  --secondary-color: #dcc5a1;
+  --light-bg: #f6f1e7;
+  --warm-highlight: #b57a4b;
+  --base-text: #2b1b12;
 }
 
 footer {
-    background-color: var(--color-primario);
+  background-color: var(--primary-color);
 }
 
 .footer-section h5 {
-    color: var(--fondo-claro);
-    font-family: "Merriweather Sans", system-ui;
-    font-size: 16px; 
+  color: var(--light-bg);
+  font-family: "Merriweather Sans", system-ui;
+  font-size: 16px;
 }
 
 .footer-section p {
-    color: var(--color-secundario);
-    font-family: "Roboto", system-ui;
-      font-size: 14px; 
+  color: var(--secondary-color);
+  font-family: "Roboto", system-ui;
+  font-size: 14px;
 }
 
 .footer-bottom {
-    color: var(--color-secundario);
-    font-family: "Google Sans Code", system-ui;
-    font-size: 12px; 
+  color: var(--secondary-color);
+  font-family: "Google Sans Code", system-ui;
+  font-size: 12px;
 }
 
 /* Tablets */
 @media only screen and (min-width: 576px) {
-    .footer-section h5 {
-        font-size: 20px;
-    }
+  .footer-section h5 {
+    font-size: 20px;
+  }
 
-    .footer-section p {
-        font-size: 16px;
-    }
+  .footer-section p {
+    font-size: 16px;
+  }
 
-    .footer-bottom {
-        font-size: 14px;
-    }
+  .footer-bottom {
+    font-size: 14px;
+  }
 }
-
 
 /* Computadoras */
 @media only screen and (min-width: 992px) {
-    .footer-section h5 {
-        font-size: 24px;
-    }
+  .footer-section h5 {
+    font-size: 24px;
+  }
 
-    .footer-section p {
-        font-size: 16px;
-    }
+  .footer-section p {
+    font-size: 16px;
+  }
 
-    .footer-bottom {
-        font-size: 16px;
-    }
+  .footer-bottom {
+    font-size: 16px;
+  }
 }
-
-
