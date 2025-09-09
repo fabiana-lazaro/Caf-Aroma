@@ -10,55 +10,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
     <div class="menu">
+        <header class="p-2 m-0 border-0 bd-example m-0 border-0">
+        <!-- Example Code Start-->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="in">
+                        <img src="../img/logo2.png" 
+                        class="image" 
+                        alt="logo"> 
+                    </div>
 
-    <header class="p-2 m-0 border-0 bd-example m-0 border-0">
-    <!-- Example Code Start-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-  <div class="in">
-    <img src="../img/logo2.png" class="image" alt="logo"> </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active button" aria-current="page" href="./index.html"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Inicio</font></font></a>
-            <a class="nav-link button" href="./sobrenosotras.html"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> Sobre nosotras</font></font></a>
-            <a class="nav-link button" href="./menu.html"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Menú</font></font></a>
-           <a class="nav-link button" href="./contacto.html"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Contactos</font></font></a>
-           <a class="nav-link button" href="./libro.html"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Libro de reclamación</font></font></a>
-           <br/>
-          </div>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active button" aria-current="page" href="./index.html">
+                                <font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Inicio</font></font>
+                            </a>
+                            <a class="nav-link button" href="./sobrenosotras.html">
+                                <font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> Sobre nosotras</font></font>
+                            </a>
+                            <a class="nav-link button" href="./menu.html">
+                                <font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Menú</font></font>
+                            </a>
+                            <a class="nav-link button" href="./contacto.html">
+                                <font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Contactos</font></font>
+                            </a>
+                            <a class="nav-link button" href="./libro.html">
+                                <font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Libro de reclamación</font></font>
+                            </a>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    <!-- Example Code End -->
+    
+    <!--búsqueda y carrito -->
+    </div>
+
+        <div class="top-bar">
+            <div class="search-container">
+                <input type="text" placeholder="Buscar..." id="barrita" />
+                <button><i class="fas fa-search compra"></i></button>
+            </div>
+            <div class="cart-container">
+                <button><i class="fas fa-shopping-cart"></i></button>
+            </div>
         </div>
-      </div>
-    </nav>
-    </div>
-
-
-
-    <div class="top-bar">
-
-    <div class="search-container">
-
-      <input type="text" placeholder="Buscar..." id="barrita" />
-
-      <button><i class="fas fa-search compra"></i></button>
-
-    </div>
-
-    <div class="cart-container">
-
-      <button><i class="fas fa-shopping-cart"></i></button>
-
-      
-
-    </div>
-
-  </div>
-</header>
+    </header>
 
     <main>
         <section class="contact-section py-5">
@@ -88,9 +91,9 @@
                             <li><strong>TikTok:</strong> @cafearoma_latam</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-6" aria-label="Formulario de contacto">
+                    <div class="col-12 col-md-6">
                         <h3>ENVÍANOS UN MENSAJE</h3>
-                        <form action="" class="contact-form" aria-label="Formulario para enviar un mensaje a Café Aroma">
+                        <form action="" class="contact-form" aria-label="Formulario de contacto">
                             <div class="row">
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="client-name" class="form-label">Nombre</label>
@@ -105,28 +108,29 @@
                                 <label for="client-message" class="form-label">Mensaje</label>
                                 <textarea class="form-control" id="client-message" name="client-message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary mb-3 contact-btn" aria-label="Botón para enviar el formulario de contacto">Enviar</button>
+                            <button type="submit" class="btn btn-primary mb-3 contact-btn">Enviar</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container pt-5">
             <div class="row justify-content-center footer-content">
-                <div class="footer-section col-md-6 col-lg-4" aria-label="Descripción de Café Aroma en el pie de página">
+                <div class="footer-section col-md-6 col-lg-4">
                     <h5><strong>Café Aroma</strong></h5>
                     <p>Ven y descubre sabores únicos que harán de cada visita un momento especial.</p>
                 </div>
-                <div class="footer-section col-md-6 col-lg-4" aria-label="Enlaces de navegación en el pie de página">
+                <div class="footer-section col-md-6 col-lg-4">
                     <h5><strong>Links</strong></h5>
                     <nav>
                         <a href="./sobrenosotras.html" aria-label="Ir a la página Sobre Nosotras">Sobre nosotras</a><br>
                         <a href="./contacto.html" aria-label="Ir a la página Contáctanos">Contáctanos</a>
                     </nav>
                 </div>
-                <div class="footer-section col-md-12 col-lg-4" aria-label="Información de contacto en el pie de página">
+                <div class="footer-section col-md-12 col-lg-4">
                     <h5><strong>Contáctanos</strong></h5>
                     <p aria-label="Correo electrónico de contacto">contacto@cafearoma.com</p>
                     <p aria-label="Número de teléfono de contacto">(+51) 987 654 321</p>
