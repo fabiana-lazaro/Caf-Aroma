@@ -1,126 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --color-primario: #4B2E1E;
-    --color-secundario: #DCC5A1;
-    --fondo-claro: #F6F1E7;
-    --resaltado-calido: #B57A4B;
-    --texto-base: #2B1B12;
+  --primary-color: #4b2e1e;
+  --secondary-color: #dcc5a1;
+  --light-bg: #f6f1e7;
+  --warm-highlight: #b57a4b;
+  --base-text: #2b1b12;
 }
 
 .in {
-    display: flow-root;
-     margin-left: 5px;
-     padding: 5px;
+  display: flow-root;
+  margin-left: 5px;
+  padding: 5px;
 }
 
 .image {
-    float: right;
+  float: right;
 
-    width: 90px;
+  width: 90px;
 }
 
-.contacto {
-    background-color: var(--color-secundario);
+.contact-section {
+  background-color: var(--secondary-color);
 }
 
-.contacto-info h1 {
-    font-family: "Playfair Display", system-ui;
-    font-size: 28px;
-    color: var(--texto-base);
+/* título y texto principal */
+.contact-info h1 {
+  font-family: "Playfair Display", system-ui;
+  font-size: 28px;
+  color: var(--base-text);
+}
+.contact-info p {
+  font-family: "Lato", system-ui;
+  font-size: 15px;
+  color: var(--primary-color);
+  line-height: 1.5;
 }
 
-.contacto-info p{
-    font-family: "Lato", system-ui;
-    font-size: 15px;
-    color: var(--color-primario);
+.contact-details h3 {
+  font-family: "Merriweather Sans", system-ui;
+  font-size: 18px;
+  color: var(--base-text);
+}
+.contact-details p,
+.contact-details ul {
+  font-family: "Roboto", system-ui;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
-.contactanos h3 {
-    font-family: "Merriweather Sans", system-ui;
-    font-size: 18px;
-    color: var(--texto-base);
+/* formulario */
+.contact-form {
+  font-family: "Roboto", system-ui;
+  font-size: 15px;
+}
+.contact-form label {
+  font-size: 14px;
 }
 
-.contactanos p {
-    font-family: "Roboto", system-ui;
-    font-size: 14px;
+/* botón */
+.contact-btn {
+  background-color: var(--warm-highlight);
+  color: var(--light-bg);
+  border-color: var(--warm-highlight);
+  font-family: "Roboto", system-ui;
+  font-size: 15px;
+}
+.contact-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--light-bg);
+  border-color: var(--primary-color);
 }
 
-.formulario {
-    font-family: "Roboto", system-ui;
-    font-size: 14px;
-}
-
-.boton {
-    background-color: var(--resaltado-calido);
-    color: var(--fondo-claro);
-    border-color: var(--resaltado-calido);
-    font-family: "Roboto", system-ui;
-    font-size: 15px;
-}
-
-
-.boton:hover {
-    background-color: var(--color-primario);
-    color: var(--fondo-claro);
-    border-color: var(--color-primario);
-    font-family: "Roboto", system-ui;
-}
-
-/* Tablets */
+/* tablets */
 @media only screen and (min-width: 576px) {
-    .contacto-info h1 {
-        font-size: 38px;
-    }
-
-    .contacto-info p{
-        font-size: 18px;
-    }
-
-    .contactanos h3 {
-        font-size: 24px;
-    }
-
-    .contactanos p {
-        font-size: 16px;
-    }
-
-    .formulario {
-        font-size: 16px;
-    }
-
-    .boton {
-        font-size: 16px;
-    }
+  .contact-info h1 {
+    font-size: 36px;
+  }
+  .contact-info p {
+    font-size: 16px;
+  }
+  .contact-details h3 {
+    font-size: 20px;
+  }
+  .contact-details p,
+  .contact-details ul {
+    font-size: 15px;
+  }
+  .contact-form {
+    font-size: 16px;
+  }
+  .contact-form label {
+    font-size: 15px;
+  }
+  .contact-btn {
+    font-size: 16px;
+  }
 }
 
-/* Computadoras */
+/* desktops */
 @media only screen and (min-width: 992px) {
-    .contacto-info h1 {
-        font-size: 52px;
-    }
-
-    .contacto-info p{
-        font-size: 20px;
-    }
-
-    .contactanos h3 {
-        font-size: 28px;
-    }
-
-    .contactanos p {
-        font-size: 18px;
-    }
-
-    .formulario {
-        font-size: 18px;
-    }
-
-    .boton {
-        font-size: 18px;
-    }
+  .contact-info h1 {
+    font-size: 48px;
+  }
+  .contact-info p {
+    font-size: 18px;
+  }
+  .contact-details h3 {
+    font-size: 22px;
+  }
+  .contact-details p,
+  .contact-details ul {
+    font-size: 16px;
+  }
+  .contact-form {
+    font-size: 17px;
+  }
+  .contact-form label {
+    font-size: 16px;
+  }
+  .contact-btn {
+    font-size: 17px;
+  }
 }

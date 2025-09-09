@@ -1,105 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --color-primario: #4B2E1E;
-    --color-secundario: #DCC5A1;
-    --fondo-claro: #F6F1E7;
-    --resaltado-calido: #B57A4B;
-    --texto-base: #2B1B12;
+  --primary-color: #4b2e1e;
+  --secondary-color: #dcc5a1;
+  --light-bg: #f6f1e7;
+  --warm-highlight: #b57a4b;
+  --base-text: #2b1b12;
+}
+.about-us-section {
+  background-color: var(--secondary-color);
 }
 
-/* Celulares */
-
-.sobre-nosotras {
-    background-color: var(--color-secundario);
-}
-
-/* Sobre el logo */
-
+/* logo */
 .in {
-    display: flow-root;
-     margin-left: 5px;
-     padding: 5px;
+  display: flow-root;
+  margin-left: 5px;
+  padding: 5px;
 }
-
 .image {
-    float: right;
-
-    width: 90px;
+  float: right;
+  width: 90px;
 }
 
-/* Fin del logo */
-
-.cafe-aroma-info h1 {
-    font-family: "Playfair Display", system-ui;
-    font-size: 26px;
-    color: var(--texto-base);
+/* texto principal */
+.about-us-info h1 {
+  font-family: "Playfair Display", system-ui;
+  font-size: 26px;
+  color: var(--base-text);
+}
+.about-us-info p {
+  font-family: "Lato", system-ui;
+  font-size: 15px;
+  color: var(--primary-color);
+  line-height: 1.5;
 }
 
-.cafe-aroma-info p{
-    font-family: "Lato", system-ui;
-    font-size: 16px;
-    color: var(--color-primario);
+/* cards */
+.team-cards .card {
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-cards .card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+/* imágenes */
+.team-cards .card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
 }
 
-.card:hover {
-    transform: translateY(-5px); 
-    transition: transform 0.5s ease, box-shadow 0.5s ease; 
+/* texto dentro de las cards */
+.team-cards h5 {
+  font-family: "Merriweather Sans", system-ui;
+  font-size: 16px;
+  color: var(--base-text);
+}
+.team-cards p {
+  font-family: "Roboto", system-ui;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
-.cards h5{
-    font-family: "Merriweather Sans", system-ui;
-    font-size: 20px;
-    color: var(--texto-base);
-}
-
-.cards p {
-    font-family: "Roboto", system-ui;
-    font-size: 14px;
-}
-
-/* Tablets */
+/* tablets */
 @media only screen and (min-width: 576px) {
-    .cafe-aroma-info h1 {
-        font-size: 40px;
-    }
+  .about-us-info h1 {
+    font-size: 36px;
+  }
+  .about-us-info p {
+    font-size: 16px;
+  }
 
-    .cafe-aroma-info p{
-        font-size: 20px;
-    }
+  .team-cards .card {
+    max-width: 360px;
+  }
 
-    .cards h5{
-        font-size: 26px;
-    }
-
-    .cards p {
-        font-size: 18px;
-    }
+  .team-cards h5 {
+    font-size: 18px;
+  }
+  .team-cards p {
+    font-size: 15px;
+  }
 }
 
-/* Computadoras */
+/* desktops */
 @media only screen and (min-width: 992px) {
-    .cafe-aroma-info h1 {
-        font-size: 55px;
-    }
+  .about-us-info h1 {
+    font-size: 48px;
+  }
+  .about-us-info p {
+    font-size: 18px;
+  }
 
-    .cafe-aroma-info p{
-        font-size: 20px;
-    }
+  .team-cards .card {
+    max-width: 420px;
+  }
 
-    .cards h5{
-        font-size: 32px;
-    }
-
-    .cards p {
-        font-size: 20px;
-    }
+  .team-cards h5 {
+    font-size: 20px;
+  }
+  .team-cards p {
+    font-size: 16px;
+  }
 }
-
