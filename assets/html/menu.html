@@ -66,27 +66,22 @@
 </header>
 
 <main>
-    <br/>
+  <br/>
+  <h1 class=" text-center men"> Nuestro menú </h1>
+  <hr/>
+  <p class="text-center viv"> 
+    Nuestra cafetería cuenta con una amplia gama de cáfes que puedes disfrutar en compañia
+  </p> 
+  <hr/>
+  <br/><br/> 
 
-    <h1 class=" text-center men"> Nuestro menú </h1>
-<hr/>
-
-<p class="text-center viv"> 
-
-  Nuestra cafetería cuenta con una amplia gama de cáfes que puedes disfrutar en compañia
-
-</p> <hr/>
-
-    <br/><br/> <section class="drink">
-
- <p class="h3 text-center hihi le">  Bebidas calientes </p>
-    <br/> 
-
-
-
- <!--1er carrusel -->
-    
-    <div id="carouselExampleCaptions" class="carousel slide">
+  <!-- Primera fila: calientes y frías -->
+  <section class="drink">
+    <div class="carrusel-item">
+      <p class="h3 text-center hihi le">  Bebidas calientes </p>
+      <br/> 
+      <!-- Carrusel caliente -->
+      <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -124,16 +119,12 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-
-
- <!--2do carrusel -->
-<br/> <br/>
- <p class="h3 text-center hihi le">  Bebidas frías </p>
-    <br/>  
-
-
-    <div id="carrusel2" class="carousel slide">
+    </div>
+    <div class="carrusel-item">
+      <p class="h3 text-center hihi le">  Bebidas frías </p>
+      <br/>  
+      <!-- Carrusel frío -->
+      <div id="carrusel2" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -171,16 +162,23 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-</section>
-<!--3er carrusel -->
+    </div>
+  </section>
 
+  <!-- Segunda fila: título y temporada -->
+  <section class="drink">
+    <div class="carrusel-item temporadas-title">
+      <p class="h3 text-center hihi le re">  Cáfe por temporadas </p>
+    </div>
+    <div></div> <!-- Espacio vacío para grid -->
+  </section>
 
-<br/> <br/>
- <p class="h3 text-center hihi le re">  Cáfe por temporadas </p>
-    <br/> <br/> 
- <p class="text-center hihi le">  Bebidas de otoño </p>
-
-    <div id="carrusel3" class="carousel slide">
+  <!-- Tercera fila: otoño y verano -->
+  <section class="drink">
+    <div class="carrusel-item">
+      <p class="text-center hihi le">  Bebidas de otoño </p>
+      <!-- Carrusel otoño -->
+      <div id="carrusel3" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carrusel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carrusel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -218,19 +216,11 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-
-
-<!--4to carrusel -->
-
-
-
-<br/> <br/> <section class="Drink">
- <p class="h3 text-center hihi le">  Bebidas de verano </p>
-    <br/> 
-
-
-    <div id="carrusel4" class="carousel slide">
+    </div>
+    <div class="carrusel-item">
+      <p class="h3 text-center hihi le">  Bebidas de verano </p>
+      <!-- Carrusel verano -->
+      <div id="carrusel4" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carrusel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carrusel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -268,10 +258,9 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-</section>
-<br/> <br/>
-
-
+    </div>
+  </section>
+  <br/> <br/>
 </main>
 
       <footer>

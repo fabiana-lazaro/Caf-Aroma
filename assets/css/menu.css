@@ -384,7 +384,6 @@ h5 {
   h1 {
     font-family: "Playfair Display", system-ui;
     font-size: 55px;
-
     color: var(--texto-base);
   }
 
@@ -404,97 +403,50 @@ h5 {
     font-size: 15px;
   }
 
+  /* Agrupa los carruseles en filas de dos columnas */
   .drink {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+    align-items: start;
+    justify-items: center;
   }
 
-  .carousel {
-    text-align: center;
-  }
-
-  #carouselExampleCaptions {
-    margin: auto;
-  }
-
-  #carouselExample .carousel-inner {
-    max-height: 1000px; /* Limita la altura máxima del contenedor del carrusel */
-    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
-  }
-
-  #carouselExample .carousel-inner img {
-    max-height: 1000x; /* Limita la altura máxima de cada imagen */
-    width: auto; /* Ajusta el ancho proporcionalmente */
-    margin: 0 auto; /* Centra la imagen */
-    object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
-    display: block; /* Para que el margen funcione correctamente */
-  }
-
-  #carouselExampleCaptions .carousel-item img {
-    object-fit: cover;
-    height: 700px;
+  /* Los Subtítulos arriba de cada carrusel */
+  .carrusel-item {
     width: 100%;
-    display: block;
-    position: relative;
-  }
-
-  #carrusel2 .carousel-item img {
-    object-fit: cover;
-    height: 700px;
-    width: 100%;
-    display: block;
-    position: relative;
-  }
-
-  #carrusel2 .carousel-item img {
-    margin: 0 auto;
-    border: 8px solid #f6f1e7;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
-    position: relative;
-    z-index: 1; /* RECUERDA ESTO */
-  }
-
-  #carrusel3 .carousel-item img {
-    object-fit: cover;
-    height: 500px;
-    width: 100%;
-    display: block;
-    position: relative;
-  }
-
-  #carrusel3 {
-    max-width: 800px;
-    margin: 20px auto; /* RECUERDA ESTO: CENTRA EL CARRUSEL REBELDE */
-    border: 8px solid #f6f1e7;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
-    position: relative;
-    z-index: 1; /* RECUERDA ESTO */
-  }
-
-  #carrusel2 {
-    max-width: 800px;
-    margin: 20px auto; /* RECUERDA ESTO: CENTRA EL CARRUSEL REBELDE */
-    border: 0px solid #f6f1e7;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
-    position: relative;
-    z-index: 1; /* RECUERDA ESTO */
-  }
-
-  #carouselExampleCaptions {
     max-width: 900px;
-    margin: 20px auto; /* RECUERDA ESTO: CENTRA EL CARRUSEL REBELDE */
-    border: 8px solid #f6f1e7;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+  }
+
+  /* Para que los títulos de temporada ocupen las dos columnas y no se vea feito */
+  .temporadas-title {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+  }
+
+  /* Agrupa los carruseles de otoño y verano para que estén en la misma fila */
+  .carrusel-item:nth-child(5), /* Bebidas de otoño */
+  .carrusel-item:nth-child(7)  /* Bebidas de verano */ {
+    margin-top: 0;
+  }
+
+  /* Centrar los carruseles */
+  #carouselExampleCaptions,
+  #carrusel2,
+  #carrusel3,
+  #carrusel4 {
+    margin: 0 auto;
+  }
+
+  /* tamaño de los carruseles */
+  #carouselExampleCaptions .carousel-item img,
+  #carrusel2 .carousel-item img,
+  #carrusel3 .carousel-item img,
+  #carrusel4 .carousel-item img {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    display: block;
     position: relative;
-    z-index: 1; /* RECUERDA ESTO */
   }
 }
