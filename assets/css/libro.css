@@ -28,12 +28,20 @@
 }
 
 /* ====== CONTENIDO ====== */
+
+fieldset {
+  border: none, solid #d7b89c;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
 main {
   display: block;
   padding: 24px 16px 32px;
 }
 body {
-  font-family: "Times New Roman", Times, serif Bold;
+  font-family: "Times New Roman", Times, bold;
   background-color: #dcc5a1;
   margin: 0;
   color: #5a4632;
@@ -49,7 +57,7 @@ body {
   font-size: 32px;
   font-family: "Playfair Display", system-ui;
   font-size: 35px;
-  color: #2b1b12;
+  color: #1a1009;
 }
 .page-hea h1 {
   margin: 0 0 8px;
@@ -69,29 +77,35 @@ body {
 
 .libro-form {
   background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  width: 640px;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  width: 700px;
   max-width: 95vw;
+  transition: transform 0.2s ease-in-out;
 }
 
-fieldset {
-  border: 2px solid #d7b89c;
-  margin-bottom: 16px;
-  padding: 16px;
-  border-radius: 8px;
+.libro-form:hover {
+  transform: translateY(-3px);
 }
+
 legend {
   font-weight: bold;
-  color: #8b5e3c;
+  color: #a7754f;
   padding: 0 6px;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #44250a;
+  display: inline-block;
+  padding-bottom: 4px;
 }
 
 label {
   display: block;
-  margin-bottom: 12px;
-  font-size: 0.95em;
+  margin-bottom: 16px;
+  font-size: 1em;
+  font-weight: 500;
+  color: #1d120b;
 }
 .tp,
 select,
@@ -111,9 +125,11 @@ select:focus,
 textarea:focus {
   border-color: #8b5e3c;
   box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.15);
+  transform: scale(1.02);
 }
 textarea {
   resize: vertical;
+  min-height: 100px;
 }
 
 button[type="submit"] {
@@ -123,11 +139,16 @@ button[type="submit"] {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: bold;
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
+
 button[type="submit"]:hover {
   background-color: #6d482e;
+  background: linear-gradient(135deg, #6d482e, #8b5e3c);
+  transform: translateY(-2px);
 }
 
 @media only screen and (min-width: 800px) {
