@@ -9,6 +9,10 @@
   --light-bg: #f6f1e7;
   --warm-highlight: #b57a4b;
   --base-text: #2b1b12;
+  --error-color: #7a1e1e;
+  --error-bg: #f8d7da;
+  --success-color: #14532d;
+  --success-bg: #d1e7dd;
 }
 
 .in {
@@ -19,7 +23,6 @@
 
 .image {
   float: right;
-
   width: 90px;
 }
 
@@ -61,6 +64,54 @@
   font-size: 14px;
 }
 
+/* inputs y textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--light-bg);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* inputs y textarea al recibir foco */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* clase para inputs con error */
+.input-error {
+  border: 2px solid var(--error-color);
+}
+
+/* feedback dinámico */
+.feedback {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 5px;
+  font-family: "Roboto", system-ui;
+  word-wrap: break-word;
+}
+
+.feedback.error {
+  color: var(--error-color);
+  background-color: var(--error-bg);
+  border: 1px solid var(--error-color);
+  padding: 5px 8px;
+}
+
+.feedback.success {
+  color: var(--success-color);
+  background-color: var(--success-bg);
+  border: 1px solid var(--success-color);
+}
 /* botón */
 .contact-btn {
   background-color: var(--warm-highlight);
@@ -68,11 +119,28 @@
   border-color: var(--warm-highlight);
   font-family: "Roboto", system-ui;
   font-size: 15px;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 .contact-btn:hover {
   background-color: var(--primary-color);
   color: var(--light-bg);
   border-color: var(--primary-color);
+}
+
+/* botón al recibir foco */
+.contact-btn:focus,
+.contact-btn:active {
+  outline: none;
+  box-shadow: 0 0 5px var(--warm-highlight);
+  background-color: var(--warm-highlight);
+  border-color: var(--warm-highlight);
+}
+
+/* estado deshabilitado del botón */
+.contact-btn:disabled {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  cursor: not-allowed;
 }
 
 /* tablets */
@@ -99,6 +167,10 @@
   .contact-btn {
     font-size: 16px;
   }
+  .feedback {
+    font-size: 15px;
+    padding: 11px;
+  }
 }
 
 /* desktops */
@@ -124,5 +196,9 @@
   }
   .contact-btn {
     font-size: 17px;
+  }
+  .feedback {
+    font-size: 16px;
+    padding: 13px;
   }
 }
