@@ -2,11 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let form = document.querySelector(".contact-form");
   let btn = document.querySelector(".contact-btn");
 
-  // Crear nuevo contenedor de feedback
-  feedback = document.createElement("div");
-  feedback.className = "feedback";
-  form.appendChild(feedback);
-
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -22,60 +17,59 @@ document.addEventListener("DOMContentLoaded", function () {
     // Expresión para validar el email
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Resetear errores previos
-    feedback.className = "feedback";
-    feedback.innerHTML = "";
-    [name, email, message].forEach((input) =>
-      input.classList.remove("input-error")
-    );
-
-    // Resetear error de inputs
+    // Eliminar feedback previo
+    form.querySelectorAll(".feedback").forEach((f) => f.remove());
     [name, email, message].forEach((input) =>
       input.classList.remove("input-error")
     );
 
     // Validaciones
-    let errors = [];
-
-    if (nameValue === "") {
-      errors.push("El nombre es obligatorio.");
+    if (!nameValue) {
+      let div = document.createElement("div");
+      div.className = "feedback error";
+      div.innerText = "El nombre es obligatorio.";
       name.classList.add("input-error");
+      name.parentNode.appendChild(div);
     }
-    if (emailValue === "") {
-      errors.push("El email es obligatorio.");
+
+    if (!emailValue) {
+      let div = document.createElement("div");
+      div.className = "feedback error";
+      div.innerText = "El email es obligatorio.";
       email.classList.add("input-error");
+      email.parentNode.appendChild(div);
     } else if (!emailPattern.test(emailValue)) {
-      errors.push("Por favor ingresa un email válido.");
+      let div = document.createElement("div");
+      div.className = "feedback error";
+      div.innerText = "Por favor ingresa un email válido.";
       email.classList.add("input-error");
+      email.parentNode.appendChild(div);
     }
-    if (messageValue === "") {
-      errors.push("El mensaje es obligatorio.");
+
+    if (!messageValue) {
+      let div = document.createElement("div");
+      div.className = "feedback error";
+      div.innerText = "El mensaje es obligatorio.";
       message.classList.add("input-error");
+      message.parentNode.appendChild(div);
     }
 
     //Mostrar errores si los hay
-    if (errors.length > 0) {
-      feedback.classList.add("error");
-      feedback.innerHTML = errors.join("<br>");
-      return;
-    }
+    if (form.querySelectorAll(".feedback.error").length > 0) return;
 
     //Simulación de envío
     btn.disabled = true;
     btn.innerText = "Enviando...";
 
     setTimeout(function () {
-      feedback.classList.remove("error");
-      feedback.classList.add("success");
-      feedback.innerText = "¡Mensaje enviado!";
+      let div = document.createElement("div");
+      div.className = "feedback success";
+      div.innerText = "¡Mensaje enviado!";
+      form.appendChild(div);
 
       form.reset();
       btn.disabled = false;
       btn.innerText = "Enviar";
-
-      [name, email, message].forEach((input) =>
-        input.classList.remove("input-error")
-      );
     }, 1500);
   });
 });
