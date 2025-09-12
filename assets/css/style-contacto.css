@@ -71,8 +71,8 @@
 }
 .contact-btn:hover {
   background-color: var(--primary-color);
-  color: var(--light-bg);
-  border-color: var(--primary-color);
+  color: var(--base-text);
+  border-color: var(--base-text);
 }
 
 /* tablets */
