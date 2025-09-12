@@ -73,11 +73,20 @@
   border-radius: 5px;
   font-family: inherit;
   font-size: 16px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* inputs y textarea al recibir foco */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
 }
 
 /* clase para inputs con error */
 .input-error {
-  border: 1px solid var(--error-color);
+  border: 2px solid var(--error-color);
 }
 
 /* feedback dinámico */
@@ -110,11 +119,21 @@
   border-color: var(--warm-highlight);
   font-family: "Roboto", system-ui;
   font-size: 15px;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 .contact-btn:hover {
   background-color: var(--primary-color);
   color: var(--light-bg);
   border-color: var(--primary-color);
+}
+
+/* botón al recibir foco */
+.contact-btn:focus,
+.contact-btn:active {
+  outline: none;
+  box-shadow: 0 0 5px var(--warm-highlight);
+  background-color: var(--warm-highlight);
+  border-color: var(--warm-highlight);
 }
 
 /* estado deshabilitado del botón */
