@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --primary-color: #4b2e1e;
@@ -43,21 +41,42 @@
   line-height: 1.5;
 }
 
-.contact-details h3 {
-  font-family: "Merriweather Sans", system-ui;
+.contact-details h2 {
+  font-family: "Lato", system-ui;
+  font-weight: bold;
   font-size: 18px;
   color: var(--base-text);
 }
 .contact-details p,
 .contact-details ul {
-  font-family: "Roboto", system-ui;
+  font-family: "Lato", system-ui;
   font-size: 14px;
   line-height: 1.4;
 }
 
+/* enlaces dentro de la sección de contacto */
+address a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+address a:hover {
+  color: var(--warm-highlight);
+}
+
+/* redes sociales */
+.social-media a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.social-media a:hover {
+  color: var(--warm-highlight);
+}
+
 /* formulario */
 .contact-form {
-  font-family: "Roboto", system-ui;
+  font-family: "Lato", system-ui;
   font-size: 15px;
 }
 .contact-form label {
@@ -71,7 +90,7 @@
   padding: 12px;
   border: 1px solid var(--light-bg);
   border-radius: 5px;
-  font-family: inherit;
+  font-family: "Lato", system-ui;
   font-size: 16px;
   transition: border 0.3s, box-shadow 0.3s;
 }
@@ -80,7 +99,7 @@
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--warm-highlight);
   box-shadow: 0 0 5px var(--primary-color);
 }
 
@@ -94,36 +113,34 @@
   display: block;
   margin-top: 5px;
   font-size: 14px;
-  padding: 8px;
   border-radius: 5px;
-  font-family: "Roboto", system-ui;
+  font-family: "Lato", system-ui;
   word-wrap: break-word;
 }
 
+.feedback.error,
+.feedback.success {
+  padding: 6px 10px;
+}
 .feedback.error {
   color: var(--error-color);
-  background-color: var(--error-bg);
-  border: 1px solid var(--error-color);
-  padding: 5px 8px;
 }
 
 .feedback.success {
   color: var(--success-color);
-  background-color: var(--success-bg);
-  border: 1px solid var(--success-color);
 }
+
 /* botón */
 .contact-btn {
   background-color: var(--warm-highlight);
   color: var(--light-bg);
-  border-color: var(--warm-highlight);
-  font-family: "Roboto", system-ui;
+  border: 1px solid var(--warm-highlight);
+  font-family: "Lato", system-ui;
   font-size: 15px;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 .contact-btn:hover {
   background-color: var(--primary-color);
-  color: var(--light-bg);
   border-color: var(--primary-color);
 }
 
@@ -131,9 +148,10 @@
 .contact-btn:focus,
 .contact-btn:active {
   outline: none;
-  box-shadow: 0 0 5px var(--warm-highlight);
-  background-color: var(--warm-highlight);
-  border-color: var(--warm-highlight);
+  box-shadow: 0 0 5px var(--primary-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--light-bg);
 }
 
 /* estado deshabilitado del botón */
@@ -151,7 +169,7 @@
   .contact-info p {
     font-size: 16px;
   }
-  .contact-details h3 {
+  .contact-details h2 {
     font-size: 20px;
   }
   .contact-details p,
@@ -169,7 +187,7 @@
   }
   .feedback {
     font-size: 15px;
-    padding: 11px;
+    padding: 10px;
   }
 }
 
@@ -181,7 +199,7 @@
   .contact-info p {
     font-size: 18px;
   }
-  .contact-details h3 {
+  .contact-details h2 {
     font-size: 22px;
   }
   .contact-details p,
@@ -199,6 +217,6 @@
   }
   .feedback {
     font-size: 16px;
-    padding: 13px;
+    padding: 12px;
   }
 }
