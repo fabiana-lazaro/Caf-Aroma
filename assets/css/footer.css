@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@1,300..800&display=swap");
 
 :root {
   --primary-color: #4b2e1e;
@@ -14,32 +13,48 @@ footer {
   background-color: var(--primary-color);
 }
 
+/* títulos */
 .footer-section h5 {
   color: var(--light-bg);
   font-family: "Merriweather Sans", system-ui;
   font-size: 16px;
 }
 
-.footer-section p {
-  color: var(--secondary-color);
-  font-family: "Roboto", system-ui;
+/* párrafos y enlaces */
+.footer-section p,
+.footer-section a {
+  color: var(--light-bg);
+  font-family: "Lato", system-ui;
   font-size: 14px;
+  line-height: 1.5;
 }
 
+.footer-section a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--secondary-color);
+}
+
+/* parte inferior */
 .footer-bottom {
   color: var(--secondary-color);
-  font-family: "Google Sans Code", system-ui;
+  font-family: "Lato", system-ui;
   font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Tablets */
+/* tablets */
 @media only screen and (min-width: 576px) {
   .footer-section h5 {
     font-size: 20px;
   }
 
-  .footer-section p {
-    font-size: 16px;
+  .footer-section p,
+  .footer-section a {
+    font-size: 15px;
   }
 
   .footer-bottom {
@@ -47,17 +62,18 @@ footer {
   }
 }
 
-/* Computadoras */
+/* desktops */
 @media only screen and (min-width: 992px) {
   .footer-section h5 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
-  .footer-section p {
+  .footer-section p,
+  .footer-section a {
     font-size: 16px;
   }
 
   .footer-bottom {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
