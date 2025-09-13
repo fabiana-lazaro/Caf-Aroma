@@ -10,6 +10,7 @@
   --warm-highlight: #b57a4b;
   --base-text: #2b1b12;
 }
+
 .about-us-section {
   background-color: var(--secondary-color);
 }
@@ -47,7 +48,7 @@
 }
 .team-cards .card:hover {
   transform: translateY(-5px);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* imágenes */
@@ -59,13 +60,15 @@
   margin: 0 auto;
 }
 
-/* texto dentro de las cards */
-.team-cards h5 {
+/* títulos dentro de las cards */
+.team-cards .card-title {
   font-family: "Merriweather Sans", system-ui;
   font-size: 16px;
   color: var(--base-text);
 }
-.team-cards p {
+
+/* párrafos dentro de las cards */
+.team-cards .card-text {
   font-family: "Roboto", system-ui;
   font-size: 14px;
   line-height: 1.4;
@@ -84,10 +87,10 @@
     max-width: 360px;
   }
 
-  .team-cards h5 {
+  .team-cards .card-title {
     font-size: 18px;
   }
-  .team-cards p {
+  .team-cards .card-text {
     font-size: 15px;
   }
 }
@@ -105,10 +108,10 @@
     max-width: 420px;
   }
 
-  .team-cards h5 {
+  .team-cards .card-title {
     font-size: 20px;
   }
-  .team-cards p {
+  .team-cards .card-text {
     font-size: 16px;
   }
 }
