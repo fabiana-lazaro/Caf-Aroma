@@ -30,7 +30,7 @@
 /* ====== CONTENIDO ====== */
 
 fieldset {
-  border: none, solid #d7b89c;
+  border: 2px, solid #d7b89c;
   margin-bottom: 16px;
   padding: 16px;
   border-radius: 8px;
@@ -47,24 +47,24 @@ body {
   color: #5a4632;
 }
 
-.page-hea {
+.page-header {
   max-width: 960px;
   margin: 0 auto 10px;
   text-align: center;
 }
-.page-hea h1 {
+.page-header h1 {
   margin: 0 0 8px;
   font-size: 32px;
   font-family: "Playfair Display", system-ui;
   font-size: 35px;
   color: #1a1009;
 }
-.page-hea h1 {
+.page-header h1 {
   margin: 0 0 8px;
   font-size: 30px;
   font-family: "Playfair Display", system-ui;
 }
-.page-hea p {
+.page-header p {
   margin: 0;
   opacity: 0.9;
 }
@@ -152,7 +152,7 @@ button[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 800px) {
-  .page-hea h1 {
+  .page-header h1 {
     margin: 0 0 8px;
     font-size: 32px;
     font-family: "Playfair Display", system-ui;
@@ -162,7 +162,7 @@ button[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 1000px) {
-  .page-hea h1 {
+  .page-header h1 {
     margin: 0 0 8px;
     font-size: 32px;
     font-family: "Playfair Display", system-ui;
