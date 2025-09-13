@@ -31,8 +31,8 @@
 
 ¿Tienes alguna pregunta, comentario o sugerencia?
 
-* **Email:** info@cafe-aroma.com
-* **Teléfono:** +1 (123) 456-7890
+* **Email:** contacto@cafearoma.com
+* **Teléfono:** (+51) 987 654 321
 * **Visítanos:** Calle Principal 123, Lima
 
 ---
