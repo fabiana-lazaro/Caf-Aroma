@@ -256,6 +256,11 @@
   padding: 10px;
 }
 
+.containerfix {
+  padding: 48px 12px 0;
+  margin: 0 17.2px;
+}
+
 @media only screen and (min-width: 600px) {
   .container__img img {
     width: 470px;
@@ -270,8 +275,7 @@
     color: #4b2e2e;
   }
 
-  .card p,
-  .card li {
+  .card p {
     font-size: 0.9rem;
     line-height: 1.6;
     color: #333;
@@ -403,8 +407,7 @@
     color: #4b2e2e;
   }
 
-  .card p,
-  .card li {
+  .card p {
     font-size: 0.7rem;
     line-height: 1.6;
     color: #333;
@@ -464,8 +467,7 @@
     color: #4b2e2e;
   }
 
-  .card p,
-  .card li {
+  .card p {
     font-size: 0.7rem;
     line-height: 1.6;
     color: #333;
@@ -542,16 +544,10 @@
     color: #4b2e2e;
   }
 
-  .card p,
-  .card li {
+  .card p {
     font-size: 0.9rem;
     line-height: 1.6;
     color: #333;
-  }
-
-  .card ul {
-    padding-left: 20px;
-    margin: 0;
   }
 }
 
@@ -654,16 +650,15 @@
     color: #4b2e2e;
   }
 
-  .card p,
-  .card li {
+  .card p {
     font-size: 0.9rem;
     line-height: 1.6;
     color: #333;
   }
 
-  .card ul {
-    padding-left: 20px;
-    margin: 0;
+  .containerfix {
+    padding: 48px 12px 0;
+    margin: 0 43.6px;
   }
 }
 
@@ -707,16 +702,10 @@
     color: #4b2e2e;
   }
 
-  .card p,
-  .card li {
-    font-size: 0.9rem;
+  .card p {
+    font-size: 1rem;
     line-height: 1.6;
     color: #333;
-  }
-
-  .card ul {
-    padding-left: 20px;
-    margin: 0;
   }
 
   .mision {
@@ -752,6 +741,16 @@
   .cit {
     padding: 5px 20px;
   }
+
+  .values {
+    padding-top: 40px;
+    padding-bottom: 65px;
+  }
+
+  .card li {
+    font-size: 1.1rem;
+  }
+
   #carouselExample .carousel-inner {
     max-height: 900px; /* Limita la altura máxima del contenedor del carrusel */
     overflow: hidden; /* Oculta cualquier contenido que sobresalga */
@@ -771,5 +770,9 @@
     width: 550px;
     display: block;
     position: relative;
+  }
+  .containerfix {
+    padding: 48px 12px 0;
+    margin: 0 90px;
   }
 }
