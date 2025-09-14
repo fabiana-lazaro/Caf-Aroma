@@ -27,7 +27,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active button" aria-current="page" href="/index.html">
+                            <a class="nav-link active button" aria-current="page" href="../../index.html">
                                 <font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Inicio</font></font>
                             </a>
                             <a class="nav-link button" href="./sobrenosotras.html">
@@ -76,9 +76,11 @@
                 <div class="row g-4 contact-details">
                     <!-- Columna izquierda -->
                     <div class="col-12 col-md-6">
-                        <h3>INFORMACIÓN BÁSICA</h3>
-                        <p><strong>📞Teléfono:</strong> (+51) 987 654 321</p>
-                        <p><strong>📧Email:</strong> contacto@cafearoma.com</p>
+                        <h2>INFORMACIÓN BÁSICA</h2>
+                        <address>
+                            <p><a href="mailto:contacto@cafearoma.com">contacto@cafearoma.com</a></p>
+                            <p><a href="tel:+51987654321">(+51) 987 654 321</a></p>
+                        </address>
                         <p><strong>🏢Sedes:</strong></p>
                         <ul>
                             <li>Jirón Huanta 910, Lima 15001 (Centro de Lima)</li>
@@ -87,8 +89,8 @@
                         </ul>
                         <p><strong>🕒Horario:</strong> Lunes a Domingo de 8:00 a.m. a 8:00 p.m.</p>
 
-                        <h3 class="mt-4">SÍGUENOS</h3>
-                        <ul aria-label="Redes sociales">
+                        <h2 class="mt-4">SÍGUENOS</h2>
+                        <ul class="social-media" aria-label="Redes sociales">
                             <li><strong>Instagram:</strong> <a href="https://instagram.com/cafearoma.pe" target="_blank">@cafearoma.pe</a></li>
                             <li><strong>Facebook:</strong> <a href="https://facebook.com/cafe_aromaoficial" target="_blank">@cafe_aromaoficial</a></li>
                             <li><strong>TikTok:</strong> <a href="https://tiktok.com/@cafearoma_latam" target="_blank">@cafearoma_latam</a></li>
@@ -97,7 +99,7 @@
 
                     <!-- Columna derecha -->
                     <div class="col-12 col-md-6">
-                        <h3>ENVÍANOS UN MENSAJE</h3>
+                        <h2>ENVÍANOS UN MENSAJE</h2>
                         <form action="" class="contact-form" aria-label="Formulario de contacto">
                             <div class="row">
                                 <div class="col-12 col-md-6 mb-3">
@@ -113,14 +115,13 @@
                                 <label for="client-message" class="form-label">Mensaje</label>
                                 <textarea class="form-control" id="client-message" name="client-message" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
                             </div>
-                            <button type="submit" class="btn contact-btn mb-3">Enviar</button>
+                            <button type="submit" class="btn contact-btn mb-3" aria-label="Enviar mensaje de contacto">Enviar</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
 
     <footer>
         <div class="container pt-5">
@@ -138,12 +139,14 @@
                 </div>
                 <div class="footer-section col-md-12 col-lg-4">
                     <h5><strong>Contáctanos</strong></h5>
-                    <p aria-label="Correo electrónico de contacto">contacto@cafearoma.com</p>
-                    <p aria-label="Número de teléfono de contacto">(+51) 987 654 321</p>
+                    <address>
+                        <p><a href="mailto:contacto@cafearoma.com">contacto@cafearoma.com</a></p>
+                        <p><a href="tel:+51987654321">(+51) 987 654 321</a></p>
+                    </address>
                 </div>
             </div>
             <div class="footer-bottom text-center pt-3 pb-3">
-                <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+                <small>&copy; 2025 Café Aroma. Todos los derechos reservados.</small>
             </div>
         </div>
     </footer>

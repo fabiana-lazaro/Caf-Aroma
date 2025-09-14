@@ -2,62 +2,60 @@ document.addEventListener("DOMContentLoaded", function () {
   let form = document.querySelector(".contact-form");
   let btn = document.querySelector(".contact-btn");
 
+  // Función para mostrar error
+  function showError(input, message) {
+    let div = document.createElement("div");
+    div.className = "feedback error";
+    div.innerText = message;
+    input.classList.add("input-error");
+    input.parentNode.appendChild(div);
+  }
+
+  // Quitar error automáticamente al escribir
+  function clearOnInput(input) {
+    input.addEventListener("input", () => {
+      input.classList.remove("input-error");
+      let errorDiv = input.parentNode.querySelector(".feedback.error");
+      if (errorDiv) errorDiv.remove();
+    });
+  }
+
+  let name = document.getElementById("client-name");
+  let email = document.getElementById("client-email");
+  let message = document.getElementById("client-message");
+
+  [name, email, message].forEach(clearOnInput);
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Obtener valores de los inputs
-    let name = document.getElementById("client-name");
-    let email = document.getElementById("client-email");
-    let message = document.getElementById("client-message");
-
+    // Valores de los inputs
     let nameValue = name.value.trim();
     let emailValue = email.value.trim();
     let messageValue = message.value.trim();
 
-    // Expresión para validar el email
+    // Patrón para email
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Eliminar feedback previo
+    // Eliminar mensajes previos
     form.querySelectorAll(".feedback").forEach((f) => f.remove());
     [name, email, message].forEach((input) =>
       input.classList.remove("input-error")
     );
 
     // Validaciones
-    if (!nameValue) {
-      let div = document.createElement("div");
-      div.className = "feedback error";
-      div.innerText = "El nombre es obligatorio.";
-      name.classList.add("input-error");
-      name.parentNode.appendChild(div);
-    }
-
+    if (!nameValue) showError(name, "El nombre es obligatorio.");
     if (!emailValue) {
-      let div = document.createElement("div");
-      div.className = "feedback error";
-      div.innerText = "El email es obligatorio.";
-      email.classList.add("input-error");
-      email.parentNode.appendChild(div);
+      showError(email, "El email es obligatorio.");
     } else if (!emailPattern.test(emailValue)) {
-      let div = document.createElement("div");
-      div.className = "feedback error";
-      div.innerText = "Por favor ingresa un email válido.";
-      email.classList.add("input-error");
-      email.parentNode.appendChild(div);
+      showError(email, "Por favor ingresa un email válido.");
     }
+    if (!messageValue) showError(message, "El mensaje es obligatorio.");
 
-    if (!messageValue) {
-      let div = document.createElement("div");
-      div.className = "feedback error";
-      div.innerText = "El mensaje es obligatorio.";
-      message.classList.add("input-error");
-      message.parentNode.appendChild(div);
-    }
-
-    //Mostrar errores si los hay
+    // Si hay errores, detener envío
     if (form.querySelectorAll(".feedback.error").length > 0) return;
 
-    //Simulación de envío
+    // Simulación de envío
     btn.disabled = true;
     btn.innerText = "Enviando...";
 

@@ -41,7 +41,7 @@
 
     <div class="top-bar">
     <div class="search-container">
-      <input type="text" placeholder="Buscar..." id="barrita" />
+      <input type="text" placeholder="Buscar..." id="little" />
       <button><i class="fas fa-search compra"></i></button>
     </div>
     <div class="cart-container">
@@ -52,7 +52,7 @@
 </header>
 
 <!--Banner - misión - visión -->
-<div class="todo">
+<div class="all">
   <div class="container">
     <div class="container__img">
       <img src="./assets/img/banner.jpeg" alt="Banner principal de Café Aroma con imagen de café">
@@ -61,7 +61,7 @@
     <div class="container__text">
       <div class="card">
         <h2>☕ <strong>Misión</strong></h2>
-        <p class="cambiaesto">
+        <p class="changethis">
           Ofrecer una experiencia única en cada taza de café, combinando calidad, sabor
           y un ambiente acogedor que invite a la conversación, la creatividad y el disfrute.
         </p>
@@ -88,11 +88,15 @@
       </figcaption>
     </figure>
   </div>
-  <br><br>
+  <br>
 
   <main class="row m-auto">
     <!-- texto de bienvenida (landing page) -->
-    <div class="col-12 col-md-6 col-lg-6 dos">
+    
+    <div class="col-12 col-md-6 col-lg-6 dos container-two">
+
+      <div class="card welcome">
+      
       <h1 class="mision"><strong><i class="fa fa-coffee" aria-hidden="true"></i>&nbsp; Bienvenidos</strong></h1>
       <br>
       <p class="text-center letra kiki">
@@ -101,18 +105,21 @@
         porque sabemos que tu tiempo es valioso y tu café, indispensable. Pasa por aquí y recarga tus baterías.
       </p>
     </div>
+    </div>
 
     <div class="col-12 col-md-6 col-lg-6 dos">
+      <div class="card welcome">
       <h1 class="mision other"><strong><i class="fa fa-coffee" aria-hidden="true"></i>&nbsp; Valores:</strong></h1>
-      <ul class="esto">
+      <ul class="esto values">
         <li><b>Dedicación:</b> Entrega absoluta con nuestros productos y servicios.</li>
         <li><b>Materias primas:</b> Experiencias con la mejor calidad en cada grano de café.</li>
       </ul>
     </div>
+    </div>
 
     <br><br><br><br><br>
   </main>
-
+<br/>
   <p class="h3 text-center hihi"><strong>Cafés más vendidos</strong></p>
   <br><br>
 
@@ -139,7 +146,7 @@
       </div>
       <div class="carousel-item">
         <img
-          src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/31d0b1fe-5bbc-4447-a336-ee9e01e63b2d.png"
+          src="./assets/img/Pumpkin Spice Latte.png"
           class="d-block w-100"
           alt="Café negro servido en taza de vidrio transparente sobre mesa de madera con vapor.">
       </div>
@@ -201,11 +208,12 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <br><br><br><br>
 </div>
 
-<br><br><br>
 
-    <footer>
+
+ <footer>
         <div class="container pt-5">
             <div class="row justify-content-center footer-content">
                 <div class="footer-section col-md-6 col-lg-4">
@@ -215,24 +223,25 @@
                 <div class="footer-section col-md-6 col-lg-4">
                     <h5><strong>Links</strong></h5>
                     <nav>
-                        <a href="./assets/html/sobrenosotras.html" aria-label="Ir a la página Sobre Nosotras">Sobre nosotras</a><br>
-                        <a href="./assets/html/contacto.html" aria-label="Ir a la página Contáctanos">Contáctanos</a>
+                        <a href="./sobrenosotras.html" aria-label="Ir a la página Sobre Nosotras">Sobre nosotras</a><br>
+                        <a href="./contacto.html" aria-label="Ir a la página Contáctanos">Contáctanos</a>
                     </nav>
                 </div>
                 <div class="footer-section col-md-12 col-lg-4">
                     <h5><strong>Contáctanos</strong></h5>
-                    <p aria-label="Correo electrónico de contacto">contacto@cafearoma.com</p>
-                    <p aria-label="Número de teléfono de contacto">(+51) 987 654 321</p>
+                    <address>
+                        <p><a href="mailto:contacto@cafearoma.com">contacto@cafearoma.com</a></p>
+                        <p><a href="tel:+51987654321">(+51) 987 654 321</a></p>
+                    </address>
                 </div>
             </div>
             <div class="footer-bottom text-center pt-3 pb-3">
-                <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+                <small>&copy; 2025 Café Aroma. Todos los derechos reservados.</small>
             </div>
         </div>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
