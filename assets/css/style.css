@@ -281,6 +281,35 @@
   padding: 48px 12px 0;
   margin: 0 17.2px;
 }
+
+/* Primer carrusel */
+
+#carouselExample {
+  max-width: 368px !important;
+  max-height: 368px !important;
+  margin: 30px auto;
+  border: 8px solid #f6f1e7;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+  position: relative;
+  z-index: 1; /* RECUERDA ESTO */
+}
+
+/* INNER - IMAGENES ZOOM*/
+
+#carouselExample .carousel-inner {
+  height: 368px !important; /* Ajusta a la altura que desees */
+  width: 368px !important;
+}
+
+#carouselExample .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* rellena el espacio sin deformar */
+  object-position: center;
+  display: block;
+}
 @media only screen and (min-width: 600px) {
   .container__img img {
     width: 470px;
@@ -346,9 +375,35 @@
   .dos {
     padding: 5px 20px;
   }
-}
 
-@media only screen and (min-width: 700px) {
+  /* Primer carrusel */
+
+  #carouselExample {
+    max-width: 368px !important;
+    max-height: 368px !important;
+    margin: 30px auto;
+    border: 8px solid #f6f1e7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+    position: relative;
+    z-index: 1; /* RECUERDA ESTO */
+  }
+
+  /* INNER - IMAGENES ZOOM*/
+
+  #carouselExample .carousel-inner {
+    height: 368px !important; /* Ajusta a la altura que desees */
+    width: 368px !important;
+  }
+
+  #carouselExample .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* rellena el espacio sin deformar */
+    object-position: center;
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -441,13 +496,10 @@
 
 @media (max-width: 768px) {
   .carousel-inner img {
-    width: 90%; /* que no ocupe toda la pantalla */
-    max-height: 250px; /* más compacto */
+    width: 100%;
+    max-height: 100%;
     margin: 0 auto; /* centrado */
     border-radius: 12px;
-    .carousel {
-      padding: 0 10px;
-    }
   }
 }
 
@@ -636,8 +688,39 @@
   }
 
   #carouselExampleCaptions .carousel-item img {
-    max-width: 98%;
+    max-width: 100%;
   }
+
+  /* Primer carrusel */
+
+  #carouselExample {
+    max-width: 368px !important;
+    max-height: 368px !important;
+    margin: 30px auto;
+    border: 8px solid #f6f1e7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+    position: relative;
+    z-index: 1; /* RECUERDA ESTO */
+  }
+
+  /* INNER - IMAGENES ZOOM*/
+
+  #carouselExample .carousel-inner {
+    height: 368px !important; /* Ajusta a la altura que desees */
+    width: 368px !important;
+  }
+
+  #carouselExample .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* rellena el espacio sin deformar */
+    object-position: center;
+    display: block;
+  }
+
+  /* fin del primer */
 
   .cambiaesto {
     font-size: 20px;
@@ -691,6 +774,35 @@
   .containerfix {
     padding: 48px 12px 0;
     margin: 0 43.6px;
+  }
+
+  /* segundo carrusel*/
+
+  #carouselExampleCaptions {
+    max-width: 900px;
+    margin: 30px auto;
+    border: 8px solid #f6f1e7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+    position: relative;
+    z-index: 1; /* RECUERDA ESTO */
+  }
+
+  #carouselExampleCaptions .carousel-item img {
+    object-fit: cover;
+    height: 550px;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  #carouselExample .carousel-control-prev {
+    left: 15px; /* icono cerca del borde izquierdo */
+  }
+
+  #carouselExample .carousel-control-next {
+    right: 15px; /* icono cerca del borde derecho */
   }
 }
 
