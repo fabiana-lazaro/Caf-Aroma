@@ -66,6 +66,12 @@
   line-height: 1.6;
   color: #333;
 }
+.card:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 .mision {
   color: #4b2e1e;
@@ -176,25 +182,6 @@
 
 /* segundo carrusel*/
 
-#carouselExampleCaptions {
-  max-width: 900px;
-  margin: 30px auto;
-  border: 8px solid #f6f1e7;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
-  position: relative;
-  z-index: 1; /* RECUERDA ESTO */
-}
-
-#carouselExampleCaptions .carousel-item img {
-  object-fit: cover;
-  height: 500px;
-  width: 100%;
-  display: block;
-  position: relative;
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.6);
@@ -203,10 +190,10 @@
 }
 
 #carouselExampleCaptions {
-  max-width: 900px;
+  max-width: 500px;
   margin: 30px auto;
   border: 8px solid #f6f1e7;
-  border-radius: 15px;
+  border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
   position: relative;
@@ -215,7 +202,7 @@
 
 #carouselExampleCaptions .carousel-item img {
   object-fit: cover;
-  height: 500px;
+  height: 350px;
   width: 100%;
   display: block;
   position: relative;
@@ -492,14 +479,23 @@
     padding-bottom: 20px;
     padding-top: 30px;
   }
-}
 
-@media (max-width: 768px) {
   .carousel-inner img {
     width: 100%;
     max-height: 100%;
     margin: 0 auto; /* centrado */
     border-radius: 12px;
+  }
+
+  #carouselExampleCaptions {
+    max-width: 630px;
+    margin: 30px auto;
+    border: 8px solid #f6f1e7;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+    position: relative;
+    z-index: 1; /* RECUERDA ESTO */
   }
 }
 
@@ -582,12 +578,12 @@
   }
 
   #carouselExample .carousel-control-prev {
-    left: 150px;
+    left: 15px;
     width: 40px;
   }
 
   #carouselExample .carousel-control-next {
-    right: 150px;
+    right: 15px;
     width: 40px;
   }
 
@@ -632,6 +628,25 @@
     font-size: 0.9rem;
     line-height: 1.6;
     color: #333;
+  }
+
+  #carouselExampleCaptions {
+    max-width: 800px;
+    margin: 30px auto;
+    border: 8px solid #f6f1e7;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
+    position: relative;
+    z-index: 1; /* RECUERDA ESTO */
+  }
+
+  #carouselExampleCaptions .carousel-item img {
+    object-fit: cover;
+    height: 450px;
+    width: 100%;
+    display: block;
+    position: relative;
   }
 }
 
@@ -694,8 +709,8 @@
   /* Primer carrusel */
 
   #carouselExample {
-    max-width: 368px !important;
-    max-height: 368px !important;
+    max-width: 400px !important;
+    max-height: 400px !important;
     margin: 30px auto;
     border: 8px solid #f6f1e7;
     border-radius: 15px;
@@ -708,8 +723,8 @@
   /* INNER - IMAGENES ZOOM*/
 
   #carouselExample .carousel-inner {
-    height: 368px !important; /* Ajusta a la altura que desees */
-    width: 368px !important;
+    height: 400px !important; /* Ajusta a la altura que desees */
+    width: 400px !important;
   }
 
   #carouselExample .carousel-item img {
@@ -720,7 +735,7 @@
     display: block;
   }
 
-  /* fin del primer */
+  /* fin del primer carrusel */
 
   .cambiaesto {
     font-size: 20px;
@@ -782,7 +797,7 @@
     max-width: 900px;
     margin: 30px auto;
     border: 8px solid #f6f1e7;
-    border-radius: 15px;
+    border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(34, 5, 5, 0.2);
     position: relative;
@@ -791,7 +806,7 @@
 
   #carouselExampleCaptions .carousel-item img {
     object-fit: cover;
-    height: 550px;
+    height: 450px;
     width: 100%;
     display: block;
     position: relative;
