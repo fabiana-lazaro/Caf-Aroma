@@ -33,7 +33,7 @@
 }
 
 .container__img img {
-  width: 300px;
+  width: 350px;
   height: auto;
   border-radius: 10px;
   display: block;
@@ -108,19 +108,12 @@
   margin: 40px;
 }
 
-#carouselExample .carousel-inner {
-  max-height: 350px; /* Limita la altura máxima del contenedor del carrusel */
-  overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+.carousel-inner img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 16px;
 }
-
-#carouselExample .carousel-inner img {
-  max-height: 500px; /* Limita la altura máxima de cada imagen */
-  width: auto; /* Ajusta el ancho proporcionalmente */
-  margin: 0 auto; /* Centra la imagen */
-  object-fit: contain; /* Mantiene la proporción, sin recortes ni distorsión */
-  display: block; /* Para que el margen funcione correctamente */
-}
-
 #carouselExample {
   max-width: 384px;
   margin: 30px auto;
@@ -128,29 +121,57 @@
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  position: relative;
 }
 
-/* Cambia color de los íconos de control a negro */
+#carouselExample .carousel-inner {
+  height: 350px; /* Ajusta a la altura que desees */
+}
+
+/* Imagen rellena toda la slide */
+#carouselExample .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* rellena el espacio sin deformar */
+  object-position: center;
+  display: block;
+}
+
+#carouselExample .carousel-control-prev,
+#carouselExample .carousel-control-next {
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10px; /* pequeño espacio desde el borde */
+}
+
 #carouselExample .carousel-control-prev-icon,
 #carouselExample .carousel-control-next-icon {
-  background-color: black !important;
-  mask-image: none !important; /* Quita la máscara predeterminada para que el fondo negro sea visible */
-  -webkit-mask-image: none !important;
   width: 40px;
   height: 40px;
-  opacity: 0.8; /* transparencia */
-  border-radius: 50%; /* para que sean circulares */
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: 20px 20px;
 }
 
 #carouselExample .carousel-control-prev {
-  left: 40px;
-  width: 40px;
+  left: 8px; /* icono cerca del borde izquierdo */
 }
 
 #carouselExample .carousel-control-next {
-  right: 40px;
-  width: 40px;
+  right: 8px; /* icono cerca del borde derecho */
+}
+
+@media (max-width: 576px) {
+  #carouselExample {
+    max-width: 320px;
+  }
+  #carouselExample .carousel-control-prev-icon,
+  #carouselExample .carousel-control-next-icon {
+    width: 36px !important;
+    height: 36px !important;
+    background-size: 20px 20px !important;
+  }
 }
 
 /* segundo carrusel*/
@@ -255,7 +276,6 @@
   border-radius: 50%;
   padding: 10px;
 }
-
 @media only screen and (min-width: 600px) {
   .container__img img {
     width: 470px;
@@ -413,6 +433,18 @@
   .values {
     padding-bottom: 20px;
     padding-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+    width: 90%; /* que no ocupe toda la pantalla */
+    max-height: 250px; /* más compacto */
+    margin: 0 auto; /* centrado */
+    border-radius: 12px;
+    .carousel {
+      padding: 0 10px;
+    }
   }
 }
 

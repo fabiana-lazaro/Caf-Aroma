@@ -23,7 +23,7 @@
 
 .image {
   float: right;
-
+  display: block;
   width: 90px;
 }
 

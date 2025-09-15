@@ -80,59 +80,78 @@
       </section>
 
       <!-- Formulario -->
-      <section class="form-wrapper">
-        <form class="libro-form">
-          <fieldset>
-            <legend>Datos del consumidor</legend>
-            <label
-              >Nombre completo:
-              <input class="tp" type="text" name="nombre" required />
-            </label>
-            <label
-              >DNI:
-              <input class="tp" type="text" name="dni" maxlength="8" required />
-            </label>
-            <label
-              >Teléfono:
-              <input class="tp" type="tel" name="telefono" />
-            </label>
-            <label
-              >Correo electrónico:
-              <input class="tp" type="email" name="correo" />
-            </label>
-          </fieldset>
+<section class="form-wrapper">
+  <form class="libro-form">
+    <fieldset>
+      <legend>Datos del consumidor</legend>
 
-          <fieldset>
-            <legend>Detalle de la queja o reclamo</legend>
-            <label
-              >Tipo:
-              <select name="tipo" required>
-                <option value="">Seleccione</option>
-                <option value="queja">Queja</option>
-                <option value="reclamo">Reclamo</option>
-              </select>
-            </label>
-            <label
-              >Descripción:
-              <textarea name="descripcion" rows="4" required></textarea>
-            </label>
-            <label
-              >Pedido relacionado:
-              <input class="tp" type="text" name="pedido" />
-            </label>
-          </fieldset>
+      <label for="nombre">Nombre completo:</label>
+      <input
+        id="nombre"
+        class="tp"
+        type="text"
+        name="nombre"
+        required
+      />
 
-          <fieldset>
-            <legend>Acción solicitada</legend>
-            <label
-              >Indique lo que espera:
-              <textarea name="accion" rows="3" required></textarea>
-            </label>
-          </fieldset>
+      <label for="dni">DNI:</label>
+      <input
+        id="dni"
+        class="tp"
+        type="text"
+        name="dni"
+        maxlength="8"
+        pattern="\d{8}"
+        required
+      />
 
-          <button type="submit">Enviar reclamo</button>
-        </form>
-      </section>
+      <label for="telefono">Teléfono:</label>
+      <input
+        id="telefono"
+        class="tp"
+        type="tel"
+        name="telefono"
+        maxlength="9"
+        pattern="\d{9}"
+        required
+      />
+
+      <label for="correo">Correo electrónico:</label>
+      <input
+        id="correo"
+        class="tp"
+        type="email"
+        name="correo"
+        required
+      />
+    </fieldset>
+
+    <fieldset>
+      <legend>Detalle de la queja o reclamo</legend>
+
+      <label for="tipo">Tipo:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Seleccione</option>
+        <option value="queja">Queja</option>
+        <option value="reclamo">Reclamo</option>
+      </select>
+
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+      <label for="pedido">Pedido relacionado:</label>
+      <input id="pedido" class="tp" type="text" name="pedido" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Acción solicitada</legend>
+      <label for="accion">Indique lo que espera:</label>
+      <textarea id="accion" name="accion" rows="3" required></textarea>
+    </fieldset>
+
+    <button type="submit">Enviar reclamo</button>
+  </form>
+</section>
     </main>
 
     <footer>
@@ -162,6 +181,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../../assets/js/libro.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
