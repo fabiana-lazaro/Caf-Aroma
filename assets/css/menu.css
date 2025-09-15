@@ -52,11 +52,6 @@ h1 {
   color: var(--texto-base);
 }
 
-p {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 h5 {
   font-size: 15px;
 }
