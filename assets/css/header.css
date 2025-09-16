@@ -8,7 +8,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #633007; 
+  background-color: #633007;
   padding: 8px 15px;
   flex-wrap: wrap;
   gap: 10px;
@@ -75,7 +75,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#d4a373; 
+  background-color: #d4a373;
   padding: 0;
   flex-wrap: nowrap;
   gap: 20px;
@@ -84,7 +84,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#d4a373; 
+  background-color: #d4a373;
   padding: 0;
   flex-wrap: nowrap;
   gap: 20px;
@@ -93,7 +93,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#d4a373; 
+  background-color: #d4a373;
   padding: 0;
   flex-wrap: nowrap;
   gap: 20px;
@@ -109,7 +109,6 @@ header {
   cursor: pointer;
   position: relative;
   border-radius: 8px;
-
 }
 
 .button:hover {
@@ -120,13 +119,12 @@ header {
   justify-content: center;
   border-radius: 8px;
 }
- @media (min-width: 600px) {
-    .cart-container {
-        display: flex; /* Muestra el carrito cuando la pantalla es más grande */
-        align-items: center; /* Asegura que el icono esté centrado si es necesario */
-    }
+@media (min-width: 600px) {
+  .cart-container {
+    display: flex; /* Muestra el carrito cuando la pantalla es más grande */
+    align-items: center; /* Asegura que el icono esté centrado si es necesario */
+  }
 }
-
 
 /* Tablets (no olvidar) */
 @media (max-width: 992px) {
@@ -165,10 +163,10 @@ header {
   .nav-menu button {
     font-size: 1.1rem;
     padding: 10px 20px;
-    
   }
-
-  
-
+  header {
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+  }
 }
-

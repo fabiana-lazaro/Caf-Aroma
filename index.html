@@ -1,248 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cáfe Aroma</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/duplicado.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <div class="menu">
-  
-<header class="p-2 m-0 border-0 bd-example m-0 border-0">
-  
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-  <div class="in">
-    <img src="./assets/img/logo2.png" class="image" alt="logo"> </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cáfe Aroma</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/duplicado.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+   <div class="search-cart-container">
+    <div class="menu">
+      
+      <header class="p-2 m-0 border-0 bd-example m-0 border-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <div class="in">
+              <img src="./assets/img/logo2.png" class="image" alt="logo" />
+            </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active button" aria-current="page" href="./index.html"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Inicio</font></font></a>
-            <a class="nav-link button" href="./assets/html/sobrenosotras.html"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Sobre nosotras</font></font></a>
-            <a class="nav-link button" href="./assets/html/menu.html"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Menú</font></font></a>
-            <a class="nav-link button" href="./assets/html/contacto.html"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Contáctanos</font></font></a>
-            <a class="nav-link button" href="./assets/html/libro.html"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Libro de reclamaciones</font></font></a>
-            <br/>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active button"
+                  aria-current="page"
+                  href="./index.html"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Inicio</font
+                    ></font
+                  ></a
+                >
+                <a
+                  class="nav-link button"
+                  href="./assets/html/sobrenosotras.html"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Sobre nosotras</font
+                    ></font
+                  ></a
+                >
+                <a class="nav-link button" href="./assets/html/menu.html"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Menú</font
+                    ></font
+                  ></a
+                >
+                <a class="nav-link button" href="./assets/html/contacto.html"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Contáctanos</font
+                    ></font
+                  ></a
+                >
+                <a class="nav-link button" href="./assets/html/libro.html"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Libro de reclamaciones</font
+                    ></font
+                  ></a
+                >
+                <br />
+              </div>
+            </div>
+          </div>
+        </nav>
+</div>
+        <!--búsqueda y carrito -->
+
+        <div class="top-bar">
+          <div class="search-container">
+            <input type="text" placeholder="Buscar..." id="little" />
+            <button><i class="fas fa-search compra"></i></button>
+          </div>
+          <div class="cart-container">
+            <button><i class="fas fa-shopping-cart"></i></button>
           </div>
         </div>
+      </header>
       </div>
-    </nav>
 
-</div>
+      <!--Banner - misión - visión -->
+      <div class="all">
+        <div class="container">
+          <div class="container__img">
+            <img
+              src="./assets/img/banner.jpeg"
+              alt="Banner principal de Café Aroma con imagen de café"
+            />
+          </div>
 
- <!--búsqueda y carrito -->
-
-    <div class="top-bar">
-    <div class="search-container">
-      <input type="text" placeholder="Buscar..." id="little" />
-      <button><i class="fas fa-search compra"></i></button>
-    </div>
-    <div class="cart-container">
-
-      <button><i class="fas fa-shopping-cart"></i></button>
-    </div>
-  </div>
-</header>
-
-<!--Banner - misión - visión -->
-<div class="all">
-  <div class="container">
-    <div class="container__img">
-      <img src="./assets/img/banner.jpeg" alt="Banner principal de Café Aroma con imagen de café">
-    </div>
-
-    <div class="container__text">
-      <div class="card">
-        <h2>☕ <strong>Misión</strong></h2>
-        <p class="changethis">
-          Ofrecer una experiencia única en cada taza de café, combinando calidad, sabor
-          y un ambiente acogedor que invite a la conversación, la creatividad y el disfrute.
-        </p>
-      </div>
-      <div class="card">
-        <h2>👁️ <strong>Visión</strong></h2>
-        <p class="cambiaesto">
-          Ser la cafetería referente en la ciudad por la excelencia de nuestros productos,
-          el compromiso con la sostenibilidad y la capacidad de crear un espacio donde
-          las personas se sientan como en casa.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!--Kiara -->
-  <div class="yy">
-    <figure class="text-end">
-      <blockquote class="blockquote">
-        <p class="me-3 kiki"><i>"El café es un tipo de magia que puedes tomar".</i></p>
-      </blockquote>
-      <figcaption class="blockquote-footer cit">
-        Catherynne M. <cite title="Source Title">Valente</cite>
-      </figcaption>
-    </figure>
-  </div>
-  <br>
-
-  <main class="row m-auto">
-    <!-- texto de bienvenida (landing page) -->
-    
-    <div class="col-12 col-md-6 col-lg-6 dos container-two">
-
-      <div class="card welcome">
-      
-      <h1 class="mision"><strong><i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;&nbsp; Bienvenidos</strong></h1>
-      <br>
-      <p class="text-center letra kiki letter">
-        ¿Necesitas un impulso? Te tenemos cubierto. En <strong>Aroma Café</strong>, encontrarás el café que necesitas
-        para empezar el día, terminar un proyecto o simplemente darte un gusto. Rápido, fresco y con el mejor sabor,
-        porque sabemos que tu tiempo es valioso y tu café, indispensable. Pasa por aquí y recarga tus baterías.
-      </p>
-    </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-6 dos">
-      <div class="card welcome">
-      <h1 class="mision other"><strong><i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;&nbsp; Valores:</strong></h1>
-      <ul class="esto values letter onlystyle">
-        <li><b>Dedicación:</b> Entrega absoluta con nuestros productos y servicios.</li>
-        <li><b>Materias primas:</b> Experiencias con la mejor calidad en cada grano de café.</li>
-      </ul>
-    </div>
-    </div>
-
-    <br><br><br><br><br>
-  </main>
-<br/>
-  <p class="h3 text-center hihi"><strong>Cafés más vendidos</strong></p>
-  <br><br>
-
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/7b72e3ae-35ca-4ae2-9e61-2de6bd928b58.png"
-          class="d-block w-100" alt="Café negro en una taza de vidrio transparente con vapor">
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/39279250-4fa6-46c1-ab29-c1b45f2d2911.png"
-          class="d-block w-100"
-          alt="Una taza de capuchino con arte latte en forma de corazón en taza blanca con plato y cuchara.">
-      </div>
-      <div class="carousel-item">
-        <img
-          src="./assets/img/Pumpkin Spice Latte.png"
-          class="d-block w-100"
-          alt="Café negro servido en taza de vidrio transparente sobre mesa de madera con vapor.">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <!--Noemi-->
-  <br><br><br><br>
-
-  <p class="h3 text-center hihi"><strong>Nuestras sedes</strong></p>
-  <br><br>
-
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/img/sede1.jpeg" class="d-block w-100" alt="Sede 1 ubicada en el Centro de Lima">
-        <div class="carousel-caption d-md-block">
-          <h5>SEDE 1</h5>
-          <p class="custom-mark">Centro de Lima</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/img/sede2.jpeg" class="d-block w-100" alt="Sede 2 ubicada en Av. Abancay">
-        <div class="carousel-caption d-md-block">
-          <h5>SEDE 2</h5>
-          <p class="custom-mark2">Av. Abancay</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/img/sede3.png" class="d-block w-100" alt="Sede 3 ubicada en Av. Arequipa">
-        <div class="carousel-caption d-md-block">
-          <h5>SEDE 3</h5>
-          <p class="custom-mark3">Av. Arequipa</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <br><br><br><br>
-</div>
-
-
-
-  <footer>
-        <div class="containerfix pt-5">
-            <div class="row justify-content-center footer-content">
-                <div class="footer-section col-md-6 col-lg-4">
-                    <h5><strong>Café Aroma</strong></h5>
-                    <p>Ven y descubre sabores únicos que harán de cada visita un momento especial.</p>
-                </div>
-                <div class="footer-section col-md-6 col-lg-4">
-                    <h5><strong>Links</strong></h5>
-                    <nav>
-                        <a href="./sobrenosotras.html" aria-label="Ir a la página Sobre Nosotras">Sobre nosotras</a><br>
-                        <a href="./contacto.html" aria-label="Ir a la página Contáctanos">Contáctanos</a>
-                    </nav>
-                </div>
-                <div class="footer-section col-md-12 col-lg-4">
-                    <h5><strong>Contáctanos</strong></h5>
-                    <address>
-                        <p><a href="mailto:contacto@cafearoma.com" aria-label="Enviar correo a contacto@cafearoma.com">contacto@cafearoma.com</a></p>
-                        <p><a href="tel:+51987654321" aria-label="Llamar al número (+51) 987 654 321">(+51) 987 654 321</a></p>
-                    </address>
-                </div>
+          <div class="container__text">
+            <div class="card">
+              <h2>☕ <strong>Misión</strong></h2>
+              <p class="changethis">
+                Ofrecer una experiencia única en cada taza de café, combinando
+                calidad, sabor y un ambiente acogedor que invite a la
+                conversación, la creatividad y el disfrute.
+              </p>
             </div>
-            <div class="footer-bottom text-center pt-3 pb-3">
-                <small>&copy; 2025 Café Aroma. Todos los derechos reservados.</small>
+            <div class="card">
+              <h2>👁️ <strong>Visión</strong></h2>
+              <p class="cambiaesto">
+                Ser la cafetería referente en la ciudad por la excelencia de
+                nuestros productos, el compromiso con la sostenibilidad y la
+                capacidad de crear un espacio donde las personas se sientan como
+                en casa.
+              </p>
             </div>
+          </div>
         </div>
+   
+      <!--Kiara -->
+      <div class="yy">
+        <figure class="text-end">
+          <blockquote class="blockquote">
+            <p class="me-3 kiki">
+              <i>"El café es un tipo de magia que puedes tomar".</i>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer cit">
+            Catherynne M. <cite title="Source Title">Valente</cite>
+          </figcaption>
+        </figure>
+      </div>
+      <br />
+
+      <main class="row m-auto">
+        <!-- texto de bienvenida (landing page) -->
+
+        <div class="col-12 col-md-6 col-lg-6 dos container-two">
+          <div class="card welcome">
+            <h1 class="mision">
+              <strong
+                ><i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;&nbsp;
+                Bienvenidos</strong
+              >
+            </h1>
+            <br />
+            <p class="text-center letra kiki letter">
+              ¿Necesitas un impulso? Te tenemos cubierto. En
+              <strong>Aroma Café</strong>, encontrarás el café que necesitas
+              para empezar el día, terminar un proyecto o simplemente darte un
+              gusto. Rápido, fresco y con el mejor sabor, porque sabemos que tu
+              tiempo es valioso y tu café, indispensable. Pasa por aquí y
+              recarga tus baterías.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6 dos">
+          <div class="card welcome">
+            <h1 class="mision other">
+              <strong
+                ><i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;&nbsp;
+                Valores:</strong
+              >
+            </h1>
+            <ul class="esto values letter onlystyle">
+              <li>
+                <b>Dedicación:</b> Entrega absoluta con nuestros productos y
+                servicios.
+              </li>
+              <li>
+                <b>Materias primas:</b> Experiencias con la mejor calidad en
+                cada grano de café.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <br /><br /><br /><br /><br />
+      </main>
+      <br />
+      <p class="h3 text-center hihi"><strong>Cafés más vendidos</strong></p>
+      <br /><br />
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/7b72e3ae-35ca-4ae2-9e61-2de6bd928b58.png"
+              class="d-block w-100"
+              alt="Café negro en una taza de vidrio transparente con vapor"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/39279250-4fa6-46c1-ab29-c1b45f2d2911.png"
+              class="d-block w-100"
+              alt="Una taza de capuchino con arte latte en forma de corazón en taza blanca con plato y cuchara."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/Pumpkin Spice Latte.png"
+              class="d-block w-100"
+              alt="Café negro servido en taza de vidrio transparente sobre mesa de madera con vapor."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--Noemi-->
+      <br /><br /><br /><br />
+
+      <p class="h3 text-center hihi"><strong>Nuestras sedes</strong></p>
+      <br /><br />
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/sede1.jpeg"
+              class="d-block w-100"
+              alt="Sede 1 ubicada en el Centro de Lima"
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>SEDE 1</h5>
+              <p class="custom-mark">Centro de Lima</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/sede2.jpeg"
+              class="d-block w-100"
+              alt="Sede 2 ubicada en Av. Abancay"
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>SEDE 2</h5>
+              <p class="custom-mark2">Av. Abancay</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/sede3.png"
+              class="d-block w-100"
+              alt="Sede 3 ubicada en Av. Arequipa"
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>SEDE 3</h5>
+              <p class="custom-mark3">Av. Arequipa</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br /><br /><br /><br />
+       </div>
+
+    <footer>
+      <div class="containerfix pt-5">
+        <div class="row justify-content-center footer-content">
+          <div class="footer-section col-md-6 col-lg-4">
+            <h5><strong>Café Aroma</strong></h5>
+            <p>
+              Ven y descubre sabores únicos que harán de cada visita un momento
+              especial.
+            </p>
+          </div>
+          <div class="footer-section col-md-6 col-lg-4">
+            <h5><strong>Links</strong></h5>
+            <nav>
+              <a
+                href="./sobrenosotras.html"
+                aria-label="Ir a la página Sobre Nosotras"
+                >Sobre nosotras</a
+              ><br />
+              <a href="./contacto.html" aria-label="Ir a la página Contáctanos"
+                >Contáctanos</a
+              >
+            </nav>
+          </div>
+          <div class="footer-section col-md-12 col-lg-4">
+            <h5><strong>Contáctanos</strong></h5>
+            <address>
+              <p>
+                <a
+                  href="mailto:contacto@cafearoma.com"
+                  aria-label="Enviar correo a contacto@cafearoma.com"
+                  >contacto@cafearoma.com</a
+                >
+              </p>
+              <p>
+                <a
+                  href="tel:+51987654321"
+                  aria-label="Llamar al número (+51) 987 654 321"
+                  >(+51) 987 654 321</a
+                >
+              </p>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom text-center pt-3 pb-3">
+          <small>&copy; 2025 Café Aroma. Todos los derechos reservados.</small>
+        </div>
+      </div>
     </footer>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<script src="./assets/js/script.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
