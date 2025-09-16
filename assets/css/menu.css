@@ -22,7 +22,12 @@
 
   width: 90px;
 }
-
+.p-2 {
+  padding: 0 !important;
+}
+.menu {
+  gap: 0.5rem;
+}
 main {
   background-color: var(--color-secundario);
 }
@@ -465,6 +470,21 @@ h5 {
     width: 350px;
     display: block;
     position: relative;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .search-cart-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 }
 

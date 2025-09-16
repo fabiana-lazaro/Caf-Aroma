@@ -220,3 +220,20 @@ address a:hover {
     padding: 12px;
   }
 }
+@media only screen and (min-width: 1000px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .search-cart-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+}

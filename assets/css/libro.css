@@ -169,4 +169,19 @@ button[type="submit"]:hover {
     font-size: 40px;
     color: #2b1b12;
   }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .search-cart-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 }

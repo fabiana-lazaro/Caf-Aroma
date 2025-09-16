@@ -22,54 +22,61 @@
     <link rel="stylesheet" href="../css/menu.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="p-2 m-0 border-0 header">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <div class="in">
-            <img src="../img/logo2.png" class="image" alt="logo" />
-          </div>
+    <div class="search-cart-container">
+      <!-- HEADER -->
+      <div class="menu">
+        <header class="p-2 m-0 border-0 header">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="in">
+                <img src="../img/logo2.png" class="image" alt="logo" />
+              </div>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-          <!-- Menú colapsable -->
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active button" href="../../index.html"
-                >Inicio</a
-              >
-              <a class="nav-link button" href="./sobrenosotras.html"
-                >Sobre nosotras</a
-              >
-              <a class="nav-link button" href="./menu.html">Menú</a>
-              <a class="nav-link button" href="./contacto.html">Contáctanos</a>
-              <a class="nav-link button" href="./libro.html"
-                >Libro de reclamaciones</a
-              >
+              <!-- Menú colapsable -->
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active button" href="../../index.html"
+                    >Inicio</a
+                  >
+                  <a class="nav-link button" href="./sobrenosotras.html"
+                    >Sobre nosotras</a
+                  >
+                  <a class="nav-link button" href="./menu.html">Menú</a>
+                  <a class="nav-link button" href="./contacto.html"
+                    >Contáctanos</a
+                  >
+                  <a class="nav-link button" href="./libro.html"
+                    >Libro de reclamaciones</a
+                  >
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Buscador -->
-    <div class="top-bar">
-      <div class="search-container">
-        <input type="text" placeholder="Buscar bebidas..." id="searchInput" />
-        <button id="searchButton"><i class="fas fa-search compra"></i></button>
+          </nav>
+        </header>
       </div>
-      <div class="cart-container">
-        <button><i class="fas fa-shopping-cart"></i></button>
+      <!-- Buscador -->
+      <div class="top-bar">
+        <div class="search-container">
+          <input type="text" placeholder="Buscar bebidas..." id="searchInput" />
+          <button id="searchButton">
+            <i class="fas fa-search compra"></i>
+          </button>
+        </div>
+        <div class="cart-container">
+          <button><i class="fas fa-shopping-cart"></i></button>
+        </div>
       </div>
     </div>
     <div id="searchResults" style="display: none; margin-top: 20px">
@@ -456,6 +463,19 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </div>
+      </section>
+      <section class="Choose-your-drink">
+        <br />
+        <div class="text-center">
+          <hr />
+          <h2 class="h2 le edit">Elige tu bebida</h2>
+          <p class="viv">
+            Explora nuestra variedad de cafés y encuentra tu favorito.
+          </p>
+          <button class="btn btn-primary buy" id="chooseDrinkBtn">
+            Elige tu bebida
+          </button>
         </div>
       </section>
       <br />
