@@ -447,3 +447,59 @@ h5 {
     position: relative;
   }
 }
+
+/* Resultados de búsqueda */
+#searchResults {
+  background: var(--fondo-claro);
+  border: 2px solid var(--color-secundario);
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;
+  display: none; /* Oculto por defecto */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#resultsTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--texto-base);
+  text-align: center;
+}
+
+#resultsContainer .result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#resultsContainer .result-item:last-child {
+  border-bottom: none;
+}
+
+#resultsContainer .result-item h5 {
+  font-size: 16px;
+  margin: 0;
+  color: var(--color-primario);
+}
+
+#resultsContainer .result-item p {
+  font-size: 14px;
+  margin: 0;
+  color: #666;
+}
+
+#resultsContainer .price {
+  font-weight: bold;
+  color: var(--resaltado-calido);
+}
+
+#resultsContainer .no-results {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
