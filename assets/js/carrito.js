@@ -25,11 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Añade un listener a cada input de cantidad
+  // Añade un escuchador a cada input de cantidad
   quantityInputs.forEach((input) => {
-    input.addEventListener("input", updateTotals); // 'input' se dispara cada vez que el valor cambia
+    input.addEventListener("input", updateTotals); // 'input' se "dispara" cada vez que el valor cambia
   });
 
-  // Llama a la función una vez al cargar la página para asegurar que los totales iniciales son correctos
+  // Llama a la función
   updateTotals();
 });

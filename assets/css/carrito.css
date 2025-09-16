@@ -46,14 +46,10 @@ body {
 }
 /* --- Estilos Generales y de Tabla --- */
 
-/* Asegúrate que no hay ningún elemento padre con overflow: hidden que esté interfiriendo */
-/* Por ejemplo, revisa si .menu o .search-cart-container tienen overflow: hidden */
-
 .shopping-cart {
-  /* O .shop_table si usas esa clase */
   border-collapse: collapse; /* Une los bordes de las celdas */
-  width: 20%; /* Ocupa el ancho completo */
-  margin-top: 20px; /* Espacio superior */
+  width: 20%; /* Ocupa el ancho poquito pq sino no me deja en mobile */
+  margin-top: 20px;
 }
 
 .shopping-cart th,
@@ -70,20 +66,22 @@ body {
   font-weight: bold;
 }
 
-/* --- Centrado de la 'X' --- */
+/* --- Centrado de la 'X' No se pudo dsp lo arreglo --- */
 .product-remove {
   vertical-align: middle; /* Centra verticalmente el contenido de la celda */
 }
 
 .woocommerce a.remove {
-  display: inline-block; /* Permite usar transform */
+  display: inline-block; /* NO LO BORRES Q LUEGO NO SE USA EL TRANSFORM */
   color: #4b2e1e !important;
   font-size: 1.5em;
   line-height: 1;
   padding: 0; /* Padding podría interferir, mejor controlarlo con margin */
   vertical-align: middle; /* Alineación general */
   position: relative; /* Necesario para el transform */
-  transform: translateY(-50%); /* Centra verticalmente */
+  transform: translateY(
+    -50%
+  ); /* pus si lo use eso lo hace verticalmente centrado */
   margin-top: 10px; /* Ajusta si es necesario para el centrado visual */
 }
 
@@ -96,22 +94,21 @@ body {
 }
 
 .product-quantity .quantity {
-  display: flex; /* Usa flexbox para alinear */
+  display: flex; /* para alinear */
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */
 }
 
 .product-quantity .quantity input[type="number"] {
   width: 50px; /* Ajusta el ancho del input */
-  text-align: center; /* Centra el texto dentro del input */
+  text-align: center; /* q mentira no se centra */
   margin: 0 auto; /* Centra el input si el contenedor padre es flex */
 }
 
 a {
-  color: #4b2e1e; /* Cambia el color del texto a burlywood */
+  color: #4b2e1e; /* Cambia el color del link */
   text-decoration: none; /* Elimina el subrayado */
 }
-/* Si usas la clase .search-cart-container */
 
 .table-wrapper {
   overflow-x: auto; /* Permite el desplazamiento horizontal */
@@ -141,20 +138,16 @@ a {
   }
   /* --- Estilos Generales y de Tabla --- */
 
-  /* Asegúrate que no hay ningún elemento padre con overflow: hidden que esté interfiriendo */
-  /* Por ejemplo, revisa si .menu o .search-cart-container tienen overflow: hidden */
-
   .shopping-cart {
-    /* O .shop_table si usas esa clase */
     border-collapse: collapse; /* Une los bordes de las celdas */
-    width: 50%; /* Ocupa el ancho completo */
-    margin-top: 20px; /* Espacio superior */
+    width: 50%; /* Ocupa la mitad pq luego tienen problemas */
+    margin-top: 20px;
   }
 
   .shopping-cart th,
   .shopping-cart td {
     border: 1px solid #4b2e1e; /* Borde para todas las celdas */
-    padding: 10px 20px; /* Espaciado interno */
+    padding: 10px 20px;
     vertical-align: middle; /* Alinea el contenido verticalmente al centro */
     font-family: "Lato", system-ui;
     font-size: 15px;
@@ -165,33 +158,33 @@ a {
     font-weight: bold;
   }
 
-  /* --- Centrado de la 'X' --- */
+  /* --- Centrado de la 'X' igual no funcionó luego lo vuevo a intentar --- */
   .product-remove {
     vertical-align: middle; /* Centra verticalmente el contenido de la celda */
   }
 
   .woocommerce a.remove {
-    display: inline-block; /* Permite usar transform */
+    display: inline-block; /* me deja usar transform */
     color: #4b2e1e !important;
     font-size: 1.5em;
     line-height: 1;
-    padding: 0; /* Padding podría interferir, mejor controlarlo con margin */
+    padding: 0; /* Padding podría interferir, mejor controlalo con margin */
     vertical-align: middle; /* Alineación general */
-    position: relative; /* Necesario para el transform */
-    transform: translateY(-50%); /* Centra verticalmente */
-    margin-top: 10px; /* Ajusta si es necesario para el centrado visual */
+    position: relative; /* Necesario para el transform q no sé si lo voh a usar */
+    transform: translateY(-50%); /*  Si lo usé pq centra verticalmente */
+    margin-top: 10px;
   }
 
   /* --- Imágenes y Campos de Input --- */
   .product-thumbnail img {
-    max-width: 100px; /* Ajusta el tamaño de la miniatura si es necesario */
+    max-width: 100px; /* Ajusta el tamaño de la miniatura */
     height: auto; /* Mantiene la proporción */
     display: block; /* Permite centrar la imagen con margin auto */
-    margin: 0 auto; /* Centra la imagen dentro de su celda */
+    margin: 0 auto; /* Centra la imagen supuestamente */
   }
 
   .product-quantity .quantity {
-    display: flex; /* Usa flexbox para alinear */
+    display: flex; /* para alinear */
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
   }
@@ -203,10 +196,9 @@ a {
   }
 
   a {
-    color: #4b2e1e; /* Cambia el color del texto a burlywood */
+    color: #4b2e1e; /* estp psra cambiar el color del link NO LO MUEVAS */
     text-decoration: none; /* Elimina el subrayado */
   }
-  /* Si usas la clase .search-cart-container */
 }
 
 @media only screen and (min-width: 1000px) {
