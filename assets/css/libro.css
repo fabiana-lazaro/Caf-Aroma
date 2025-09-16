@@ -26,6 +26,10 @@
   display: block;
   width: 90px;
 }
+a {
+  color: black; /* Cambia el color del texto a negro */
+  text-decoration: none; /* Elimina el subrayado */
+}
 
 /* ====== CONTENIDO ====== */
 

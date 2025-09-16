@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/duplicado.css" />
+    <link rel="stylesheet" href="../css/carrito.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+     <div class="search-cart-container">
+    <div class="menu">
+      
+      <header class="p-2 m-0 border-0 bd-example m-0 border-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <div class="in">
+              <img src="../img/logo2.png" class="image" alt="logo" />
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active button"
+                  aria-current="page"
+                  href="../../index.html"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Inicio</font
+                    ></font
+                  ></a
+                >
+                <a
+                  class="nav-link button"
+                  href="../html/sobrenosotras.html"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Sobre nosotras</font
+                    ></font
+                  ></a
+                >
+                <a class="nav-link button" href="./menu.html"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Menú</font
+                    ></font
+                  ></a
+                >
+                <a class="nav-link button" href="../html/contacto.html"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Contáctanos</font
+                    ></font
+                  ></a
+                >
+                <a class="nav-link button" href="../html/libro.html"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Libro de reclamaciones</font
+                    ></font
+                  ></a
+                >
+                <br />
+              </div>
+            </div>
+          </div>
+        </nav>
+</header></div>
+        <!--búsqueda y carrito -->
+
+        <div class="top-bar">
+          <div class="search-container">
+            <input type="text" placeholder="Buscar..." id="little" />
+            <button><i class="fas fa-search compra"></i></button>
+          </div>
+          <div class="cart-container">
+            <button><i class="fas fa-shopping-cart"></i></button>
+          
+          </div>
+        </div>
+      </header>
+      </div>
+  <h1 class="text-center main-title-carrito">  <br/> CARRITO DE COMPRAS</h1>
+      <!--Cotización de precios -->
+      
+
+<br />   
+      <div class="main-content">
+        
+      <p class="second-text">Revisa los productos que has agregado a tu carrito.</p>
+
+      <!-- Tabla del carrito -->
+<div class="table-wrapper">
+<div id="-woo-cart-3-80" class="woocommerce">
+      <form action="woocommerce-cart-form" method="post"> 
+        <table class="shopping-cart woocommerce-cart-form" cellspacing="0" border="1"> 
+            <thead>
+                <tr>
+                    <th class="product-remove">&nbsp;
+                        <span>Eliminar producto</span>
+                    </th>
+                    <th class="product-thumbnail">&nbsp;
+                        <span>Imágen en miniatura</span>
+                    </th>
+                    <th class="product-name">Producto</th>
+                    <th class="product-price">Precio</th>
+                    <th class="product-quantity">Cantidad</th>
+                    <th class="product-subtotal">Total</th>
+                </tr>
+        
+            </thead>
+              <tbody>
+                <tr class="woocommerce-cart-form__cart-item cart_item">
+                    <td class="product-remove">
+                        <a href="#" class="remove" aria-label="Eliminar este producto" data-product_id="80" data-product_sku="">X</a> 
+                    </td>
+                    <td class="product-thumbnail">
+                        <a href="../img/espresso-coffee-recipe022.webp"><img width="100" height="100" src="../img/espresso-coffee-recipe022.webp" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"></a> 
+                    </td>
+                    <td class="product-name" data-title="Producto">
+                        <a href="../html/menu.html">Café Espresso</a> 
+                    </td>
+                    <td class="product-price" data-title="Precio">
+                        <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span><span class="unit-price">3.00</span></bdi></span> 
+                    </td>
+                    <td class="product-quantity" data-title="Cantidad">
+                        <div class="quantity">
+                            <input type="number" id="quantity_5c8e7c6e2f1b4" class="input-text qty text" step="1" min="0" max="" name="cart[80][qty]" value="1" title="Cantidad" size="4" pattern="[0-9]*" inputmode="numeric"> 
+                        </div>
+                    </td>
+                    <td class="product-subtotal" data-title="Total">
+                        <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol"></span><span class="total-price">3.00</span></bdi></span> 
+                    </td>
+                    
+                </tbody>
+
+        </table>
+        </div>
+</div>
+</div>
+<script src="../js/carrito.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

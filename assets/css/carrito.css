@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-principal: #dcc5a1;
+}
+
+.in {
+  display: flow-root;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.image {
+  float: right;
+  display: block;
+  width: 90px;
+}
+body {
+  background-color: var(--color-principal);
+  line-height: 1.6;
+  font-family: "Times New Roman", Times, bold;
+}
+.main-content {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  margin: 0;
+}
+
+.main-title-carrito {
+  font-family: "Playfair Display", system-ui;
+  font-size: 28px;
+  color: #2b1b12;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.second-text {
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+/* --- Estilos Generales y de Tabla --- */
+
+/* Asegúrate que no hay ningún elemento padre con overflow: hidden que esté interfiriendo */
+/* Por ejemplo, revisa si .menu o .search-cart-container tienen overflow: hidden */
+
+.shopping-cart {
+  /* O .shop_table si usas esa clase */
+  border-collapse: collapse; /* Une los bordes de las celdas */
+  width: 20%; /* Ocupa el ancho completo */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.shopping-cart th,
+.shopping-cart td {
+  border: 1px solid #4b2e1e; /* Borde para todas las celdas */
+  padding: 10px 20px; /* Espaciado interno */
+  vertical-align: middle; /* Alinea el contenido verticalmente al centro */
+  font-family: "Lato", system-ui;
+  font-size: 14px;
+}
+
+.shopping-cart th {
+  background-color: var(--color-principal); /* Fondo para encabezados */
+  font-weight: bold;
+}
+
+/* --- Centrado de la 'X' --- */
+.product-remove {
+  vertical-align: middle; /* Centra verticalmente el contenido de la celda */
+}
+
+.woocommerce a.remove {
+  display: inline-block; /* Permite usar transform */
+  color: #4b2e1e !important;
+  font-size: 1.5em;
+  line-height: 1;
+  padding: 0; /* Padding podría interferir, mejor controlarlo con margin */
+  vertical-align: middle; /* Alineación general */
+  position: relative; /* Necesario para el transform */
+  transform: translateY(-50%); /* Centra verticalmente */
+  margin-top: 10px; /* Ajusta si es necesario para el centrado visual */
+}
+
+/* --- Imágenes y Campos de Input --- */
+.product-thumbnail img {
+  max-width: 50px; /* Ajusta el tamaño de la miniatura si es necesario */
+  height: auto; /* Mantiene la proporción */
+  display: block; /* Permite centrar la imagen con margin auto */
+  margin: 0 auto; /* Centra la imagen dentro de su celda */
+}
+
+.product-quantity .quantity {
+  display: flex; /* Usa flexbox para alinear */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.product-quantity .quantity input[type="number"] {
+  width: 50px; /* Ajusta el ancho del input */
+  text-align: center; /* Centra el texto dentro del input */
+  margin: 0 auto; /* Centra el input si el contenedor padre es flex */
+}
+
+a {
+  color: #4b2e1e; /* Cambia el color del texto a burlywood */
+  text-decoration: none; /* Elimina el subrayado */
+}
+/* Si usas la clase .search-cart-container */
+
+.table-wrapper {
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en iOS */
+}
+
+@media only screen and (min-width: 640px) {
+  .main-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .main-title-carrito {
+    font-family: "Playfair Display", system-ui;
+    font-size: 47px;
+    color: #1a1009;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .second-text {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  /* --- Estilos Generales y de Tabla --- */
+
+  /* Asegúrate que no hay ningún elemento padre con overflow: hidden que esté interfiriendo */
+  /* Por ejemplo, revisa si .menu o .search-cart-container tienen overflow: hidden */
+
+  .shopping-cart {
+    /* O .shop_table si usas esa clase */
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    width: 50%; /* Ocupa el ancho completo */
+    margin-top: 20px; /* Espacio superior */
+  }
+
+  .shopping-cart th,
+  .shopping-cart td {
+    border: 1px solid #4b2e1e; /* Borde para todas las celdas */
+    padding: 10px 20px; /* Espaciado interno */
+    vertical-align: middle; /* Alinea el contenido verticalmente al centro */
+    font-family: "Lato", system-ui;
+    font-size: 15px;
+  }
+
+  .shopping-cart th {
+    background-color: var(--color-principal); /* Fondo para encabezados */
+    font-weight: bold;
+  }
+
+  /* --- Centrado de la 'X' --- */
+  .product-remove {
+    vertical-align: middle; /* Centra verticalmente el contenido de la celda */
+  }
+
+  .woocommerce a.remove {
+    display: inline-block; /* Permite usar transform */
+    color: #4b2e1e !important;
+    font-size: 1.5em;
+    line-height: 1;
+    padding: 0; /* Padding podría interferir, mejor controlarlo con margin */
+    vertical-align: middle; /* Alineación general */
+    position: relative; /* Necesario para el transform */
+    transform: translateY(-50%); /* Centra verticalmente */
+    margin-top: 10px; /* Ajusta si es necesario para el centrado visual */
+  }
+
+  /* --- Imágenes y Campos de Input --- */
+  .product-thumbnail img {
+    max-width: 100px; /* Ajusta el tamaño de la miniatura si es necesario */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Permite centrar la imagen con margin auto */
+    margin: 0 auto; /* Centra la imagen dentro de su celda */
+  }
+
+  .product-quantity .quantity {
+    display: flex; /* Usa flexbox para alinear */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+  }
+
+  .product-quantity .quantity input[type="number"] {
+    width: 60px; /* Ajusta el ancho del input */
+    text-align: center; /* Centra el texto dentro del input */
+    margin: 0 auto; /* Centra el input si el contenedor padre es flex */
+  }
+
+  a {
+    color: #4b2e1e; /* Cambia el color del texto a burlywood */
+    text-decoration: none; /* Elimina el subrayado */
+  }
+  /* Si usas la clase .search-cart-container */
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .search-cart-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  #-woo-cart-3-80 table.shop_table {
+    border-top-color: #4b2e1e;
+  }
+  .woo-commerce {
+    border-top-color: #4b2e1e;
+    width: 100%;
+  }
+
+  .second-text {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
